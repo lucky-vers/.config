@@ -48,8 +48,8 @@ vim.g.maplocalleader = " "
   map("n", "<leader>x", ":%s/\\s\\+$//e<CR>:q!<CR>", opts) -- Quit without saving
 
   -- Go to line extremes
-  map("n", "qq", "0", opts) -- Go to begining
-  map("n", "qw", "$", opts) -- Go to end
+  map("n", "Q", "0", opts) -- Go to begining
+  map("n", "W", "$", opts) -- Go to end
 
   -- Select all text
   map("n", "<C-a>", "ggvG$", opts)
