@@ -1,1 +1,1 @@
-Personal neovim configuration.
+Personal neovim configuration. WIP
