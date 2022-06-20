@@ -106,11 +106,11 @@ vim.g.maplocalleader = " "
   map("v", ">", ">gv", opts) -- Indent right
 
   -- Add brackets and quotes to selection
-  map("v", "\"\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
-  map("v", "\'\'", "<ESC>`>a\'<ESC>`<i\'<ESC>", opts)
-  map("v", "{{",   "<ESC>`>a}<ESC>`<i{<ESC>",   opts)
-  map("v", "((",   "<ESC>`>a)<ESC>`<i(<ESC>",   opts)
-  map("v", "[[",   "<ESC>`>a]<ESC>`<i[<ESC>",   opts)
+  map("v", ";\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
+  map("v", ";\'", "<ESC>`>a\'<ESC>`<i\'<ESC>", opts)
+  map("v", ";{",  "<ESC>`>a}<ESC>`<i{<ESC>",   opts)
+  map("v", ";(",  "<ESC>`>a)<ESC>`<i(<ESC>",   opts)
+  map("v", ";[",  "<ESC>`>a]<ESC>`<i[<ESC>",   opts)
 
   -- Move text up and down
   map("v", "<A-j>", ":m .+1<CR>==", opts)
