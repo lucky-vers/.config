@@ -20,14 +20,10 @@ vim.g.maplocalleader = " "
 -- NORMAL --
 
   -- Better window navigation
-  map("n", "<leader>h", "<C-w>h", opts) -- Move left
-  map("n", "<leader>j", "<C-w>j", opts) -- Move down
-  map("n", "<leader>k", "<C-w>k", opts) -- Move up
-  map("n", "<leader>l", "<C-w>l", opts) -- Move right
-
-  -- Scroll pages
-  map("n", "<C-l>", "<C-u>", opts)
-  map("n", "<C-h>", "<C-d>", opts)
+  map("n", "<C-h>", "<C-w>h", opts) -- Move left
+  map("n", "<C-j>", "<C-w>j", opts) -- Move down
+  map("n", "<C-k>", "<C-w>k", opts) -- Move up
+  map("n", "<C-l>", "<C-w>l", opts) -- Move right
 
   -- Resize with arrows
   map("n", "<C-Up>",    ":resize +2<CR>",          opts) -- Vertically resize up by 2
@@ -52,7 +48,7 @@ vim.g.maplocalleader = " "
   map("n", "<A-x>", "$", opts) -- Go to end
 
   -- Select all text
-  map("n", "<C-a>", "ggvG$", opts)
+  map("n", "<C-a>", "gg0vG$", opts)
 
   -- Move to <++>
   map("n", "<leader><leader>", "/<++><CR>ca<", opts)
@@ -83,6 +79,12 @@ vim.g.maplocalleader = " "
 
   -- Redo
   map("n", "R", "<C-r>", opts)
+
+  -- Lorem text
+  map("n", "<leader>l", "iLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<ESC>", opts)
+
+  -- Disable search highlighting termporarily
+  map("n", "<ESC>", ":noh<CR>", opts)
 
 -- INSERT --
 
