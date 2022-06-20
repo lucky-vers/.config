@@ -138,7 +138,7 @@ alias ga.="git add ."
 alias gp="git push"
 
 gm () {
-  git commit -m "$1"
+  git commit -m \"$1\"
 }
 
 eval "$(starship init bash)"
