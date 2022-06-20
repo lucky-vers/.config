@@ -1,0 +1,260 @@
+[
+  {
+  commit:  "ec21dd028488a521ff52eee05c491d7203bf2053",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sat Jun 18 21:58:57 2022 +0530",
+  comment: "Remove deletion of whitespace function in save keymap"
+  },
+  {
+  commit:  "233dbeccb5204fea2139421299c6e49d8e89ae0c",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Fri Jun 17 12:47:44 2022 +0530",
+  comment: "Clean up commands"
+  },
+  {
+  commit:  "2289d527f4caa67cfe130c1ab90e9dd785192dd6",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 21:41:59 2022 +0530",
+  comment: "Format mode indicators"
+  },
+  {
+  commit:  "4a00f2903b302e4cf76497a8956beb3c27cb00b7",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 21:16:48 2022 +0530",
+  comment: "Fix issue in moving between buffers"
+  },
+  {
+  commit:  "81bd903c7251fc27e8a33ce4241ed4c88e8a5f8b",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 20:49:42 2022 +0530",
+  comment: "Universalise keymap"
+  },
+  {
+  commit:  "a2f6baff0e8ecdcc3d36cd10bcf302fe19549f4c",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 19:24:41 2022 +0530",
+  comment: "Remap"
+  },
+  {
+  commit:  "85a3b48386dded023731114389320eec905c9ee5",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 18:45:57 2022 +0530",
+  comment: "Update README"
+  },
+  {
+  commit:  "621381ae3c858bd16681e21a8466e8acaddbb087",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 18:27:36 2022 +0530",
+  comment: "Reset scrolling threshold"
+  },
+  {
+  commit:  "3dc425a81b4d0f65770e5d036de1202ee1722bbd",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 18:24:53 2022 +0530",
+  comment: "Change scrolling threshold, remove global keybind"
+  },
+  {
+  commit:  "0b0b31148f778424fef421e42feff6c589381d60",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 13:41:28 2022 +0530",
+  comment: "Change keymaps for inserting quotations and brackets, and of searching and replacing"
+  },
+  {
+  commit:  "5e17b6c080a844f32375d0b6135a788b16e66941",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 13:28:53 2022 +0530",
+  comment: "Remove word definitions"
+  },
+  {
+  commit:  "807f4ea908899c0ac6f0525ad3825fe2e2598016",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 13:24:41 2022 +0530",
+  comment: "Change comment format"
+  },
+  {
+  commit:  "7c7c94ea58655fc5c11164b8a5454debd5722a79",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 13:02:26 2022 +0530",
+  comment: "Add easy-align"
+  },
+  {
+  commit:  "bfa14128149c8f6f71b6f3e09a0cdb2cb02739a1",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 13:00:29 2022 +0530",
+  comment: "Align text"
+  },
+  {
+  commit:  "29ca9d315e501a004f16799870468f71d25faeab",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 12:57:22 2022 +0530",
+  comment: "Add keymaps"
+  },
+  {
+  commit:  "2515047a028857e6e18d6dc0cbc22cbefcb3e0d2",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 12:44:34 2022 +0530",
+  comment: "Remap keys to move from line extremes"
+  },
+  {
+  commit:  "b2a9469fb109f9694aa02a445330dd94f8b07c5b",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 10:57:40 2022 +0530",
+  comment: "Fix alignment"
+  },
+  {
+  commit:  "a6d395d34736144eb8ad336c15a17cf0d7384356",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 10:52:55 2022 +0530",
+  comment: "Remove auto deletion of whitespace"
+  },
+  {
+  commit:  "9fdb26e4de7a527411b4e8d1b2ec41b579f63646",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 10:12:29 2022 +0530",
+  comment: "Fix select all keymap"
+  },
+  {
+  commit:  "10eb68dcec11339fce469ef137b4338ce3a4e18e",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 16 09:36:47 2022 +0530",
+  comment: "Change keymap of quit without saving"
+  },
+  {
+  commit:  "287f7a607aa2cc650c26e82352420977f45b9f75",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Tue Jun 14 10:58:14 2022 +0530",
+  comment: "Add telescope plugin"
+  },
+  {
+  commit:  "a8cfd0ee9d52a428a9f7f09fefa64d05d14fc4ac",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Tue Jun 14 08:25:42 2022 +0530",
+  comment: "Change keymap to move between buffers"
+  },
+  {
+  commit:  "88367182c454522c76d7d4066b51577f7df6a19d",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Tue Jun 14 08:24:23 2022 +0530",
+  comment: "Change tabs to spaces"
+  },
+  {
+  commit:  "98f618d5f4e116279fa660c4a69d1f60c8722071",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Mon Jun 13 06:13:00 2022 +0530",
+  comment: "Replace tabs with spaces"
+  },
+  {
+  commit:  "f9331c96d4d95e57c08b3deb91b1ea0f0194cbb5",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Fri Jun 10 02:08:19 2022 +0530",
+  comment: "Reassign keys to move to line extremes"
+  },
+  {
+  commit:  "a97e7f3111ad06ad9439ac19c1d67e129d3d8dbe",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Thu Jun 9 22:47:07 2022 +0530",
+  comment: "General changes."
+  },
+  {
+  commit:  "594deaffe8a73b6c65816695249fefb9e8b7316a",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Wed Jun 1 22:19:05 2022 +0530",
+  comment: "Add line extreme keymap to visual mode"
+  },
+  {
+  commit:  "4b2c410aa2413c2f4af0dbe350a44991faf7e0cd",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Mon May 30 03:40:05 2022 +0530",
+  comment: "Remap scroll page keys"
+  },
+  {
+  commit:  "596bc9ad50429fe2b01665b1e1fb346907f9a157",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 18:21:43 2022 +0530",
+  comment: "Remove autopairs plugin, add functionality to keymaps.lua"
+  },
+  {
+  commit:  "c134996112108a1e81ee6a5e5692e9f32bdfa87e",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 17:58:53 2022 +0530",
+  comment: "Fix minor issues"
+  },
+  {
+  commit:  "c7294bee2a1f1f1ff161f9083f84520e18235033",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 17:11:54 2022 +0530",
+  comment: "Add autopairs"
+  },
+  {
+  commit:  "4ae4468acb8ed9e8ee5aae32c42888710b3c9376",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 14:48:24 2022 +0530",
+  comment: "General global update"
+  },
+  {
+  commit:  "aea9b210790537a5ae73c4874047dc6170b564c8",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 14:42:18 2022 +0530",
+  comment: "Fix tab spacing (again)"
+  },
+  {
+  commit:  "c52d2d4f4bc0196b0f25f440a3b5a3a9f2a631dd",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 14:40:48 2022 +0530",
+  comment: "Fix tab spacing"
+  },
+  {
+  commit:  "5fae61a924a0d8accd243df28d30427ae7a7512a",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 14:34:10 2022 +0530",
+  comment: "Add option to remove trailing whitespace"
+  },
+  {
+  commit:  "52941547f1e0322c06b9369b42c817301888cbee",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 12:47:22 2022 +0530",
+  comment: "Improve comments"
+  },
+  {
+  commit:  "603d667a5777671ec1e791e38cffd2ef33dbf531",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 12:43:26 2022 +0530",
+  comment: "Add treesitter and rainbow parentheses"
+  },
+  {
+  commit:  "00258f056b415c1d1fd46d38ce374c518d9ce200",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 02:45:31 2022 +0530",
+  comment: "Remove main.py"
+  },
+  {
+  commit:  "df3c64f8d462ad7633bf848eefe9e4e71ef12714",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 02:43:56 2022 +0530",
+  comment: "Remove test.cpp"
+  },
+  {
+  commit:  "afe882d509c4491386360687f954b2b5e519f4c8",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 02:42:51 2022 +0530",
+  comment: "Add new keymaps"
+  },
+  {
+  commit:  "de28b7692dc66e27eec53dfb34fe7b045de4c327",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sun May 29 01:56:55 2022 +0530",
+  comment: "Add LSP packages"
+  },
+  {
+  commit:  "c002ba42bc7b7e12b2e6e210835be87edfb6a849",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sat May 28 23:24:29 2022 +0530",
+  comment: "Add description of project"
+  },
+  {
+  commit:  "e5240abed9c2255d3f322a0d2acd4cf975f1c034",
+  author:  "lucky-vers <vermalucky2004@gmail.com>",
+  date:    "Sat May 28 23:22:13 2022 +0530",
+  comment: "Initial commit."
+  },
+]
