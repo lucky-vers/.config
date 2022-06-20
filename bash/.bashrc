@@ -133,5 +133,12 @@ alias mkdir="mkdir -p"
 alias c="cd ~/.config"
 alias h="cd ~"
 alias x="cd /"
+alias ga="git add"
+alias ga.="git add ."
+alias gp="git push"
+
+gm () {
+  git commit -m "$1"
+}
 
 eval "$(starship init bash)"
