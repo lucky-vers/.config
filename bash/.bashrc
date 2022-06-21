@@ -137,6 +137,6 @@ alias ga="git add"
 alias gaa="git add ."
 alias gp="git push"
 alias gc="git commit -m "
-alias gl="git log"
+alias gd="git diff"
 
 eval "$(starship init bash)"
