@@ -119,8 +119,8 @@ vim.g.maplocalleader = " "
   map("v", "<A-k>", ":m .-2<CR>==", opts)
 
   -- Go to line extremes
-  map("v", "qq", "0", opts) -- Go to begining
-  map("v", "qw", "$", opts) -- Go to end
+  map("v", "<A-z>", "0", opts) -- Go to begining
+  map("v", "<A-x>", "$", opts) -- Go to end
 
 -- VISUAL BLOCK --
 
