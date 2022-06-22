@@ -94,6 +94,13 @@ vim.g.maplocalleader = " "
   -- Disable search highlighting termporarily
   map("n", "<ESC>", ":noh<CR>", opts)
 
+  -- Toggle line truncation
+  map("n", "<leader>t", ":set wrap!", opts)
+
+  -- Move across truncated lines
+  map("n", "<C-K>", "gk", opts) -- Move up
+  map("n", "<C-J>", "gj", opts) -- Move down
+
 -- INSERT --
 
   -- Press jj fast to enter visual mode
