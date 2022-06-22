@@ -19,6 +19,10 @@ vim.g.maplocalleader = " "
 
 -- NORMAL --
 
+  -- Move across paragraphs
+  map("n", "^", "{", opts)
+  map("n", "&", "}", opts)
+
   -- Better window navigation
   map("n", "<C-h>", "<C-w>h", opts) -- Move left
   map("n", "<C-j>", "<C-w>j", opts) -- Move down
@@ -107,12 +111,16 @@ vim.g.maplocalleader = " "
   map("v", "<", "<gv", opts) -- Indent left
   map("v", ">", ">gv", opts) -- Indent right
 
+  -- Move across paragraphs
+  map("v", "^", "{", opts)
+  map("v", "&", "}", opts)
+
   -- Add brackets and quotes to selection
-  map("v", ";\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
-  map("v", ";\'", "<ESC>`>a\'<ESC>`<i\'<ESC>", opts)
-  map("v", ";{",  "<ESC>`>a}<ESC>`<i{<ESC>",   opts)
-  map("v", ";(",  "<ESC>`>a)<ESC>`<i(<ESC>",   opts)
-  map("v", ";[",  "<ESC>`>a]<ESC>`<i[<ESC>",   opts)
+  map("v", "\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
+  map("v", "\'", "<ESC>`>a\'<ESC>`<i\'<ESC>", opts)
+  map("v", "{",  "<ESC>`>a}<ESC>`<i{<ESC>",   opts)
+  map("v", "(",  "<ESC>`>a)<ESC>`<i(<ESC>",   opts)
+  map("v", "[",  "<ESC>`>a]<ESC>`<i[<ESC>",   opts)
 
   -- Move text up and down
   map("v", "<A-j>", ":m .+1<CR>==", opts)
