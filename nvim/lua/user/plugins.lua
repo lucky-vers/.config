@@ -53,7 +53,7 @@ return packer.startup(function(use)
   use "airblade/vim-gitgutter"           -- Show git diffs
 
   -- Color Schemes
-  use "morhetz/gruvbox"                  -- Gruvbox
+  use "gruvbox-community/gruvbox"        -- Gruvbox
   use "catppuccin/nvim"                  -- Catpuccin
   use "altercation/vim-colors-solarized" -- Solarized
   use "LunarVim/Colorschemes"            -- LunarVim color schemes
