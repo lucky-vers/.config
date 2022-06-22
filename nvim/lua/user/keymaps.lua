@@ -1,12 +1,13 @@
-local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
+local opts      = { noremap = true, silent = true }
 
 -- Shorten function name
 local map = vim.api.nvim_set_keymap
 
 -- Remap space as leader key
 map("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
+
+vim.g.mapleader      = " "
 vim.g.maplocalleader = " "
 
 -- Mode indicators
@@ -23,11 +24,18 @@ vim.g.maplocalleader = " "
   map("n", "^", "{", opts)
   map("n", "&", "}", opts)
 
+  -- Create splits
+  map("n", "<A-h>", "<C-w>s", opts) -- Horizontal split
+  map("n", "<A-v>", "<C-w>v", opts) -- Vertical split
+
+  -- Unmaps CTRL+K
+  map("n", "<leader>^", "<C-k>", opts)
+
   -- Better window navigation
-  map("n", "<C-h>", "<C-w>h", opts) -- Move left
-  map("n", "<C-j>", "<C-w>j", opts) -- Move down
-  map("n", "<C-k>", "<C-w>k", opts) -- Move up
-  map("n", "<C-l>", "<C-w>l", opts) -- Move right
+  map("n", "<A-H>", "<C-w>h", opts) -- Move left
+  map("n", "<A-J>", "<C-w>j", opts) -- Move down
+  map("n", "<A-K>", "<C-w>k", opts) -- Move up
+  map("n", "<A-L>", "<C-w>l", opts) -- Move right
 
   -- Resize with arrows
   map("n", "<C-Up>",    ":resize +2<CR>",          opts) -- Vertically resize up by 2
@@ -69,10 +77,6 @@ vim.g.maplocalleader = " "
 
   -- Add a space
   map("n", ",", "i<space><ESC>", opts)
-
-  -- Scroll through truncated lines
-  map("n", "<A-J>", "gj", opts) -- Scroll down
-  map("n", "<A-K>", "gk", opts) -- Scroll up
 
   -- Move text up and down
   map("n", "<A-j>", ":m .+1<CR>", opts)
