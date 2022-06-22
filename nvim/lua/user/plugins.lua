@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use "psliwka/vim-smoothie"             -- Vim smooth scrolling
   use "nvim-telescope/telescope.nvim"    -- Telescope
   use "junegunn/vim-easy-align"          -- Align objects easily
+  use "airblade/vim-gitgutter"           -- Show git diffs
 
   -- Color Schemes
   use "morhetz/gruvbox"                  -- Gruvbox
@@ -78,9 +79,9 @@ return packer.startup(function(use)
 
   -- Treesitter
   use {                                  -- Main Treesitter package
-  "nvim-treesitter/nvim-treesitter",     -- --
-  run = ":TSUpdate"                      -- --
-  }                                      -- --
+  "nvim-treesitter/nvim-treesitter",     --
+  run = ":TSUpdate"                      --
+  }                                      --
   use "p00f/nvim-ts-rainbow"             -- Rainbow parentheses
 
   if PACKER_BOOTSTRAP then
