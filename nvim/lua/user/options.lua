@@ -6,7 +6,7 @@ local lua_options = {
   shiftwidth    = 2,         -- Change the indentation width to 2
   tabstop       = 2,         -- Change the tab width to 2
   number        = true,      -- Show line numbers
-  numberwidth   = 1,         -- Set width of line numbers to 4
+  numberwidth   = 2,         -- Set width of line numbers to 2
   fileencoding  = "utf-8",   -- Set the file encoding format
   hlsearch      = true,      -- Highlight search matches
   scrolloff     = 6,         -- Start scrolling vertically at 6 pixels from the end
@@ -15,6 +15,7 @@ local lua_options = {
   smartindent   = true,      -- Enable smart indent
   termguicolors = true,      -- Allow terminals to use more colors
   showmode      = false,     -- Stop showing -- INSERT -- on the bottom
+  signcolumn    = "yes",     -- Add a column on the left
 }
 
 for key, value in pairs(lua_options) do
