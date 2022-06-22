@@ -44,8 +44,8 @@ vim.g.maplocalleader = " "
   map("n", "<leader>x", ":%s/\\s\\+$//e<CR>:q!<CR>", opts) -- Quit without saving
 
   -- Go to line extremes
-  map("n", "<A-z>", "0", opts) -- Go to begining
-  map("n", "<A-x>", "$", opts) -- Go to end
+  map("n", "<A-i>", "0", opts) -- Go to begining
+  map("n", "<A-a>", "$", opts) -- Go to end
 
   -- Select all text
   map("n", "<C-a>", "gg0vG$", opts)
@@ -119,8 +119,8 @@ vim.g.maplocalleader = " "
   map("v", "<A-k>", ":m .-2<CR>==", opts)
 
   -- Go to line extremes
-  map("v", "<A-z>", "0", opts) -- Go to begining
-  map("v", "<A-x>", "$", opts) -- Go to end
+  map("v", "<A-i>", "0", opts) -- Go to begining
+  map("v", "<A-a>", "$", opts) -- Go to end
 
 -- VISUAL BLOCK --
 
