@@ -199,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-easy-align",
     url = "https://github.com/junegunn/vim-easy-align"
   },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
+  },
   ["vim-smoothie"] = {
     loaded = true,
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-smoothie",
