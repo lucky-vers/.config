@@ -38,14 +38,6 @@ read_only_style   = "bg:#fabd2f fg:#282828"
 truncation_symbol = "…/"
 truncation_length = 8
 
-[directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music"     = " "
-"Pictures"  = " "
-".config"   = " "
-"nvim"      = " "
-
 [git_status]
 style      = "bg:#fb4934"
 format     = "[[($all_status$ahead_behind )](bg:#fb4934 fg:#282828)]($style)"
