@@ -95,7 +95,7 @@ vim.g.maplocalleader = " "
   map("n", "<ESC>", ":noh<CR>", opts)
 
   -- Toggle line truncation
-  map("n", "<leader>t", ":set wrap!", opts)
+  map("n", "<leader>t", ":set wrap!<CR>", opts)
 
   -- Move across truncated lines
   map("n", "<C-K>", "gk", opts) -- Move up
