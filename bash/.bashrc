@@ -139,4 +139,8 @@ alias gp="git push"
 alias gc="git commit -m "
 alias gd="git diff"
 
+cdd () {
+  cd $1 && ls -la
+}
+
 eval "$(starship init bash)"
