@@ -28,20 +28,17 @@ vim.g.maplocalleader = " "
   map("n", "<A-h>", "<C-w>s", opts) -- Horizontal split
   map("n", "<A-v>", "<C-w>v", opts) -- Vertical split
 
-  -- Unmaps CTRL+K
-  map("n", "<leader>^", "<C-k>", opts)
-
   -- Better window navigation
-  map("n", "<A-H>", "<C-w>h", opts) -- Move left
-  map("n", "<A-J>", "<C-w>j", opts) -- Move down
-  map("n", "<A-K>", "<C-w>k", opts) -- Move up
-  map("n", "<A-L>", "<C-w>l", opts) -- Move right
+  map("n", "<C-Up>",    "<C-w>k", opts) -- Move up
+  map("n", "<C-Down>",  "<C-w>j", opts) -- Move down
+  map("n", "<C-Left>",  "<C-w>h", opts) -- Move left
+  map("n", "<C-Right>", "<C-w>l", opts) -- Move right
 
   -- Resize with arrows
-  map("n", "<C-Up>",    ":resize +2<CR>",          opts) -- Vertically resize up by 2
-  map("n", "<C-Down>",  ":resize -2<CR>",          opts) -- Vertically resize down by 2
-  map("n", "<C-Left>",  ":vertical resize -2<CR>", opts) -- Vertically resize left by 2
-  map("n", "<C-Right>", ":vertical resize +2<CR>", opts) -- Vertically resize right by 2
+  map("n", "<C-K>", ":resize +2<CR>",          opts) -- Vertically resize up by 2
+  map("n", "<C-J>", ":resize -2<CR>",          opts) -- Vertically resize down by 2
+  map("n", "<C-H>", ":vertical resize -2<CR>", opts) -- Vertically resize left by 2
+  map("n", "<C-L>", ":vertical resize +2<CR>", opts) -- Vertically resize right by 2
 
   -- Navigate buffers
   map("n", "<S-l>", ":bnext<CR>",     opts) -- Go to next buffer
@@ -61,9 +58,6 @@ vim.g.maplocalleader = " "
 
   -- Select all text
   map("n", "<C-a>", "gg0vG$", opts)
-
-  -- Move to <++>
-  map("n", "<leader><leader>", "/<++><CR>ca<", opts)
 
   -- Search and Replace
   map("n", "<leader>r", ":%s/", opts)
@@ -88,9 +82,6 @@ vim.g.maplocalleader = " "
   -- Redo
   map("n", "R", "<C-r>", opts)
 
-  -- Lorem text
-  map("n", "<leader>l", "iLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<ESC>", opts)
-
   -- Disable search highlighting termporarily
   map("n", "<ESC>", ":noh<CR>", opts)
 
@@ -103,7 +94,7 @@ vim.g.maplocalleader = " "
 
 -- INSERT --
 
-  -- Press jj fast to enter visual mode
+  -- Press jj to enter visual mode
   map("i", "jj", "<ESC>", opts)
 
   -- Autocomplete brackets and quotes
