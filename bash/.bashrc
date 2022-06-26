@@ -138,5 +138,6 @@ alias gaa="git add ."
 alias gp="git push"
 alias gc="git commit -m "
 alias gd="git diff"
+alias cat="bat --theme=gruvbox"
 
 eval "$(starship init bash)"
