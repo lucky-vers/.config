@@ -2,24 +2,35 @@ local M = {}
 
 -- TODO: backfill this to template
 M.setup = function()
-  local signs = {
-    { name = "DiagnosticSignError", text = "" },
-    { name = "DiagnosticSignWarn", text = "" },
-    { name = "DiagnosticSignHint", text = "" },
-    { name = "DiagnosticSignInfo", text = "" },
-  }
 
-  for _, sign in ipairs(signs) do
-    vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-  end
+vim.cmd [[
+  highlight DiagnosticLineNrError guibg=#770F02 guifg=#FB4934 gui=bold
+  highlight DiagnosticLineNrWarn  guibg=#6F3200 guifg=#FE8019 gui=bold
+  highlight DiagnosticLineNrInfo  guibg=#32453D guifg=#83A598 gui=bold
+  highlight DiagnosticLineNrHint  guibg=#355529 guifg=#8EC07C gui=bold
+
+  sign define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=DiagnosticLineNrError
+  sign define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  linehl= numhl=DiagnosticLineNrWarn
+  sign define DiagnosticSignInfo  text= texthl=DiagnosticSignInfo  linehl= numhl=DiagnosticLineNrInfo
+  sign define DiagnosticSignHint  text= texthl=DiagnosticSignHint  linehl= numhl=DiagnosticLineNrHint
+]]
+
+vim.cmd[[highlight SignColumn guibg=#282828]]
+
+vim.cmd[[
+  hi GitGutterAdd    guibg=#282828
+  hi GitGutterChange guibg=#282828
+  hi GitGutterDelete guibg=#282828
+
+  let g:gitgutter_sign_added    = '\ +'
+  let g:gitgutter_sign_modified = '\ ~'
+  let g:gitgutter_sign_removed  = '\ -'
+]]
 
   local config = {
     -- disable virtual text
     virtual_text = false,
     -- show signs
-    signs = {
-      active = signs,
-    },
     update_in_insert = true,
     underline = true,
     severity_sort = true,
@@ -66,7 +77,6 @@ local function lsp_keymaps(bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-  vim.api.nvim_buf_set_keymap(bufnr, "n", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
   -- vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
   -- vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
