@@ -1,5 +1,5 @@
 format = """
-[](#fabd2f)\
+[ ](#fabd2f)\
 $directory\
 [](#fabd2f)\
 $git_branch\
@@ -15,7 +15,7 @@ $username\
 [](bg:#8ec07c fg:#83a598)\
 $time\
 [](fg:#33658a)\
-[](#83a598)
+[ ](#83a598)
 [  ](fg:#83a598)\
 """
 
