@@ -3,6 +3,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+echo ""
+
 # Enable vi mode
 set -o vi
 
