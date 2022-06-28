@@ -142,4 +142,6 @@ alias cat="bat --theme=gruvbox"
 
 alias wget="wget --hsts-file=~/.config/wget-hsts"
 
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+
 eval "$(starship init bash)"

@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"    -- Telescope
   use "junegunn/vim-easy-align"          -- Align objects easily
   use "airblade/vim-gitgutter"           -- Show git diffs
+  use "RRethy/vim-illuminate"            -- Highlight similar words
 
   -- Color Schemes
   use "gruvbox-community/gruvbox"        -- Gruvbox

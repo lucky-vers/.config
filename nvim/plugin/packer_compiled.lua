@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-smoothie"] = {
     loaded = true,
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-smoothie",
