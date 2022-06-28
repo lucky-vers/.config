@@ -142,8 +142,4 @@ alias cat="bat --theme=gruvbox"
 
 alias wget="wget --hsts-file=~/.config/wget-hsts"
 
-export HISTFILE="~/.config/bash/history"
-export PYTHONSTARTUP="~/.config/python/pythonrc"
-export LESSHISTFILE="~/.config/less/history"
-
 eval "$(starship init bash)"
