@@ -18,10 +18,10 @@ vim.cmd [[
 vim.cmd[[highlight SignColumn guibg=#282828]]
 
 vim.cmd[[
-  hi GitGutterAdd          guibg=#282828
-  hi GitGutterChange       guibg=#282828
-  hi GitGutterDelete       guibg=#282828
-  hi GitGutterChangeDelete guibg=#282828
+  hi GitGutterAdd          guibg=#B8BB26
+  hi GitGutterChange       guibg=#FABD2F
+  hi GitGutterDelete       guibg=#FB4934
+  hi GitGutterChangeDelete guibg=#FABD2F
 
   let g:gitgutter_sign_added    = '\ +'
   let g:gitgutter_sign_modified = '\ ~'
