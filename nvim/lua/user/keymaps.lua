@@ -88,9 +88,9 @@ vim.g.maplocalleader = " "
   -- Toggle line truncation
   map("n", "<leader>t", ":set wrap!<CR>", opts)
 
-  -- Move across truncated lines
-  map("n", "<C-K>", "gk", opts) -- Move up
-  map("n", "<C-J>", "gj", opts) -- Move down
+  -- GitGutter
+  map("n", "(", ":GitGutterPrevHunk<CR>", opts) -- Move to previous hunk
+  map("n", ")", ":GitGutterNextHunk<CR>", opts) -- Move to next hunk
 
 -- INSERT --
 
@@ -104,6 +104,7 @@ vim.g.maplocalleader = " "
   map("i", "[", "[]<ESC>i",    opts) -- Square brackets
   map("i", "{", "{}<ESC>i",    opts) -- Curly brackets
 
+  -- Telescope
   map("n", "<leader>f", ":Telescope find_files<CR>", opts)
   map("n", "<c-t>",     ":Telescope live_grep<CR>",  opts)
 
