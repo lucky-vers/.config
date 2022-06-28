@@ -4,10 +4,10 @@ local M = {}
 M.setup = function()
 
 vim.cmd [[
-  highlight DiagnosticLineNrError guibg=#770F02 guifg=#FB4934 gui=bold
-  highlight DiagnosticLineNrWarn  guibg=#6F3200 guifg=#FE8019 gui=bold
-  highlight DiagnosticLineNrInfo  guibg=#32453D guifg=#83A598 gui=bold
-  highlight DiagnosticLineNrHint  guibg=#355529 guifg=#8EC07C gui=bold
+  highlight DiagnosticLineNrError guibg=#282828 guifg=#FB4934 gui=bold
+  highlight DiagnosticLineNrWarn  guibg=#282828 guifg=#FE8019 gui=bold
+  highlight DiagnosticLineNrInfo  guibg=#282828 guifg=#83A598 gui=bold
+  highlight DiagnosticLineNrHint  guibg=#282828 guifg=#8EC07C gui=bold
 
   sign define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=DiagnosticLineNrError
   sign define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  linehl= numhl=DiagnosticLineNrWarn
