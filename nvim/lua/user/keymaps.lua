@@ -11,12 +11,12 @@ vim.g.mapleader      = " "
 vim.g.maplocalleader = " "
 
 -- Mode indicators
--- Normal Mode       = n
--- Insert Mode       = i
--- Visual Mode       = v
--- Visual Block Mode = x
--- Terminal Mode     = t
--- Command Mode      = c
+  -- Normal Mode       = n
+  -- Insert Mode       = i
+  -- Visual Mode       = v
+  -- Visual Block Mode = x
+  -- Terminal Mode     = t
+  -- Command Mode      = c
 
 -- NORMAL --
 
