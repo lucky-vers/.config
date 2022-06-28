@@ -15,7 +15,7 @@ $username\
 $time\
 [](fg:#33658a)\
 [\n](fg:#33658a)\
-[  ](fg:#83a598)\
+[ ](fg:#83a598)\
 """
 
 add_newline          = true
