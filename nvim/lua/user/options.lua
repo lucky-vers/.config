@@ -16,6 +16,8 @@ local lua_options = {
   termguicolors = true,      -- Allow terminals to use more colors
   showmode      = false,     -- Stop showing -- INSERT -- on the bottom
   signcolumn    = "yes",     -- Add a column on the left
+  ignorecase    = true,      -- Disable case sensitivity
+  smartcase     = true,      -- Enable smartcase
 }
 
 for key, value in pairs(lua_options) do
