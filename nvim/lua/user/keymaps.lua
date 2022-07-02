@@ -29,16 +29,16 @@ vim.g.maplocalleader = " "
   map("n", "<A-v>", "<C-w>v", opts) -- Vertical split
 
   -- Better window navigation
-  map("n", "<C-Up>",    "<C-w>k", opts) -- Move up
-  map("n", "<C-Down>",  "<C-w>j", opts) -- Move down
-  map("n", "<C-Left>",  "<C-w>h", opts) -- Move left
-  map("n", "<C-Right>", "<C-w>l", opts) -- Move right
+  map("n", "<C-k>", "<C-w>k", opts) -- Move up
+  map("n", "<C-j>", "<C-w>j", opts) -- Move down
+  map("n", "<C-h>", "<C-w>h", opts) -- Move left
+  map("n", "<C-l>", "<C-w>l", opts) -- Move right
 
   -- Resize with arrows
-  map("n", "<C-K>", ":resize +2<CR>",          opts) -- Vertically resize up by 2
-  map("n", "<C-J>", ":resize -2<CR>",          opts) -- Vertically resize down by 2
-  map("n", "<C-H>", ":vertical resize -2<CR>", opts) -- Vertically resize left by 2
-  map("n", "<C-L>", ":vertical resize +2<CR>", opts) -- Vertically resize right by 2
+  map("n", "<C-Up>",    ":resize +2<CR>",          opts) -- Vertically resize up by 2
+  map("n", "<C-Down>",  ":resize -2<CR>",          opts) -- Vertically resize down by 2
+  map("n", "<C-Left>",  ":vertical resize -2<CR>", opts) -- Vertically resize left by 2
+  map("n", "<C-Right>", ":vertical resize +2<CR>", opts) -- Vertically resize right by 2
 
   -- Navigate buffers
   map("n", "<S-l>", ":bnext<CR>",     opts) -- Go to next buffer
