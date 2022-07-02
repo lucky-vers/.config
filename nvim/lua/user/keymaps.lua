@@ -1,5 +1,5 @@
 local term_opts = { silent = true }
-local opts      = { noremap = true, silent = true }
+local opts      = { silent = true, noremap = true }
 
 -- Shorten function name
 local map = vim.api.nvim_set_keymap
@@ -21,8 +21,8 @@ vim.g.maplocalleader = " "
 -- NORMAL --
 
   -- Move across paragraphs
-  map("n", "^", "{", opts)
-  map("n", "&", "}", opts)
+  map("n", "<A-{>", "{", opts)
+  map("n", "<A-}>", "}", opts)
 
   -- Create splits
   map("n", "<A-h>", "<C-w>s", opts) -- Horizontal split
@@ -115,8 +115,8 @@ vim.g.maplocalleader = " "
   map("v", ">", ">gv", opts) -- Indent right
 
   -- Move across paragraphs
-  map("v", "^", "{", opts)
-  map("v", "&", "}", opts)
+  map("v", "<A-{>", "{", opts)
+  map("v", "<A-}>", "}", opts)
 
   -- Add brackets and quotes to selection
   map("v", "\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
@@ -141,6 +141,9 @@ vim.g.maplocalleader = " "
 
   -- Start plugin EasyAlign
   map("x", "ga", "<Plug>(EasyAlign)", opts)
+
+  -- Add spaces
+  map("x", ",", "I<space><ESC>gv", opts)
 
 -- TERMINAL --
 
