@@ -42,48 +42,48 @@ packer.init {
 return packer.startup(function(use)
 
   -- General
-  use "wbthomason/packer.nvim"           -- Have packer manage itself
-  use "nvim-lua/popup.nvim"              -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"            -- Useful lua functions used ny lots of plugins
-  use "vim-airline/vim-airline"          -- A simple status bar
-  use "vim-airline/vim-airline-themes"   -- Themes for the status bar
-  use "psliwka/vim-smoothie"             -- Vim smooth scrolling
-  use "nvim-telescope/telescope.nvim"    -- Telescope
-  use "junegunn/vim-easy-align"          -- Align objects easily
-  use "airblade/vim-gitgutter"           -- Show git diffs
-  use "RRethy/vim-illuminate"            -- Highlight similar words
+    use "wbthomason/packer.nvim"           -- Have packer manage itself
+    use "nvim-lua/popup.nvim"              -- An implementation of the Popup API from vim in Neovim
+    use "nvim-lua/plenary.nvim"            -- Useful lua functions used ny lots of plugins
+    use "vim-airline/vim-airline"          -- A simple status bar
+    use "vim-airline/vim-airline-themes"   -- Themes for the status bar
+    use "psliwka/vim-smoothie"             -- Vim smooth scrolling
+    use "nvim-telescope/telescope.nvim"    -- Telescope
+    use "junegunn/vim-easy-align"          -- Align objects easily
+    use "airblade/vim-gitgutter"           -- Show git diffs
+    use "RRethy/vim-illuminate"            -- Highlight similar words
 
   -- Color Schemes
-  use "gruvbox-community/gruvbox"        -- Gruvbox
-  use "catppuccin/nvim"                  -- Catpuccin
-  use "altercation/vim-colors-solarized" -- Solarized
-  use "LunarVim/Colorschemes"            -- LunarVim color schemes
-  use "folke/tokyonight.nvim"            -- Tokyo Night
-  use "dracula/vim"                      -- Dracula
-  use "flazz/vim-colorschemes"           -- A package of multiple color schemes
+    use "gruvbox-community/gruvbox"        -- Gruvbox
+    use "catppuccin/nvim"                  -- Catpuccin
+    use "altercation/vim-colors-solarized" -- Solarized
+    use "LunarVim/Colorschemes"            -- LunarVim color schemes
+    use "folke/tokyonight.nvim"            -- Tokyo Night
+    use "dracula/vim"                      -- Dracula
+    use "flazz/vim-colorschemes"           -- A package of multiple color schemes
 
   -- CMP
-  use "hrsh7th/nvim-cmp"                 -- Completion plugin
-  use "hrsh7th/cmp-buffer"               -- Buffer Completions
-  use "hrsh7th/cmp-path"                 -- Path Completions
-  use "hrsh7th/cmp-cmdline"              -- Cmdline Completions
-  use "hrsh7th/cmp-nvim-lsp"             -- LSP Completion
-  use "saadparwaiz1/cmp_luasnip"         -- Snippet Completions
+    use "hrsh7th/nvim-cmp"                 -- Completion plugin
+    use "hrsh7th/cmp-buffer"               -- Buffer Completions
+    use "hrsh7th/cmp-path"                 -- Path Completions
+    use "hrsh7th/cmp-cmdline"              -- Cmdline Completions
+    use "hrsh7th/cmp-nvim-lsp"             -- LSP Completion
+    use "saadparwaiz1/cmp_luasnip"         -- Snippet Completions
 
   -- Snippets
-  use "L3MON4D3/LuaSnip"                 -- Snippet Engine
-  use "rafamadriz/friendly-snippets"     -- A Bunch of Snippets to use
+    use "L3MON4D3/LuaSnip"                 -- Snippet Engine
+    use "rafamadriz/friendly-snippets"     -- A Bunch of Snippets to use
 
   -- LSP
-  use "neovim/nvim-lspconfig"            -- LSP Enabler
-  use "williamboman/nvim-lsp-installer"  -- LSP Installer
+    use "neovim/nvim-lspconfig"            -- LSP Enabler
+    use "williamboman/nvim-lsp-installer"  -- LSP Installer
 
   -- Treesitter
-  use {                                  -- Main Treesitter package
-  "nvim-treesitter/nvim-treesitter",     --
-  run = ":TSUpdate"                      --
-  }                                      --
-  use "p00f/nvim-ts-rainbow"             -- Rainbow parentheses
+    use {                                  -- Main Treesitter package
+    "nvim-treesitter/nvim-treesitter",     --
+    run = ":TSUpdate"                      --
+    }                                      --
+    use "p00f/nvim-ts-rainbow"             -- Rainbow parentheses
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
