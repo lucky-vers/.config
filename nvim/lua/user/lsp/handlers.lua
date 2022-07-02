@@ -4,10 +4,10 @@ local M = {}
 M.setup = function()
 
 vim.cmd [[
-  highlight DiagnosticLineNrError guibg=#282828 guifg=#FB4934 gui=bold
-  highlight DiagnosticLineNrWarn  guibg=#282828 guifg=#FE8019 gui=bold
-  highlight DiagnosticLineNrInfo  guibg=#282828 guifg=#83A598 gui=bold
-  highlight DiagnosticLineNrHint  guibg=#282828 guifg=#8EC07C gui=bold
+  highlight DiagnosticLineNrError guifg=#FB4934 guibg=#282828 gui=bold
+  highlight DiagnosticLineNrWarn  guifg=#FE8019 guibg=#282828 gui=bold
+  highlight DiagnosticLineNrInfo  guifg=#83A598 guibg=#282828 gui=bold
+  highlight DiagnosticLineNrHint  guifg=#8EC07C guibg=#282828 gui=bold
 
   sign define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=DiagnosticLineNrError
   sign define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  linehl= numhl=DiagnosticLineNrWarn
@@ -15,22 +15,22 @@ vim.cmd [[
   sign define DiagnosticSignHint  text= texthl=DiagnosticSignHint  linehl= numhl=DiagnosticLineNrHint
 ]]
 
-  local config = {
-    -- disable virtual text
-    virtual_text = false,
-    -- show signs
-    update_in_insert = true,
-    underline = true,
-    severity_sort = true,
-    float = {
-      focusable = false,
-      style     = "minimal",
-      border    = "rounded",
-      source    = "always",
-      header    = "",
-      prefix    = "q",
-    },
-  }
+local config = {
+  -- disable virtual text
+  virtual_text = false,
+  -- show signs
+  update_in_insert = true,
+  underline = true,
+  severity_sort = true,
+  float = {
+    focusable = false,
+    style     = "minimal",
+    border    = "rounded",
+    source    = "always",
+    header    = "",
+    prefix    = "q",
+  },
+}
 
   vim.diagnostic.config(config)
 
