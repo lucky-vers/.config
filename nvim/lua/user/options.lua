@@ -17,6 +17,7 @@ local lua_options = {
   signcolumn    = "yes",   -- Add a column on the left
   ignorecase    = true,    -- Disable case sensitivity
   smartcase     = true,    -- Enable smartcase
+  showmode      = false,   -- Disable showmode
 }
 
 for key, value in pairs(lua_options) do
