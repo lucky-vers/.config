@@ -5,7 +5,7 @@ local opts      = { silent = true, noremap = true }
 local map = vim.api.nvim_set_keymap
 
 -- Remap space as leader key
-map("", "<Space>", "<Nop>", opts)
+map("", "<SPACE>", "<Nop>", opts)
 
 vim.g.mapleader      = " "
 vim.g.maplocalleader = " "
@@ -35,10 +35,10 @@ vim.g.maplocalleader = " "
   map("n", "<C-l>", "<C-w>l", opts) -- Move right
 
   -- Resize with arrows
-  map("n", "<C-Up>",    ":resize +2<CR>",          opts) -- Vertically resize up by 2
-  map("n", "<C-Down>",  ":resize -2<CR>",          opts) -- Vertically resize down by 2
-  map("n", "<C-Left>",  ":vertical resize -2<CR>", opts) -- Vertically resize left by 2
-  map("n", "<C-Right>", ":vertical resize +2<CR>", opts) -- Vertically resize right by 2
+  map("n", "<C-Up>",    ":resize +1<CR>",          opts) -- Vertically resize up by 1
+  map("n", "<C-Down>",  ":resize -1<CR>",          opts) -- Vertically resize down by 1
+  map("n", "<C-Left>",  ":vertical resize -1<CR>", opts) -- Vertically resize left by 1
+  map("n", "<C-Right>", ":vertical resize +1<CR>", opts) -- Vertically resize right by 1
 
   -- Navigate buffers
   map("n", "<S-l>", ":bnext<CR>",     opts) -- Go to next buffer
@@ -70,7 +70,7 @@ vim.g.maplocalleader = " "
   map("n", "G", "Gzz", opts)
 
   -- Add a space
-  map("n", ",", "i<space><ESC>", opts)
+  map("n", ",", "i<SPACE><ESC>", opts)
 
   -- Move text up and down
   map("n", "<A-j>", ":m .+1<CR>", opts)
@@ -143,7 +143,7 @@ vim.g.maplocalleader = " "
   map("x", "ga", "<Plug>(EasyAlign)", opts)
 
   -- Add spaces
-  map("x", ",", "I<space><ESC>gv", opts)
+  map("x", ",", "I<SPACE><ESC>gv", opts)
 
 -- TERMINAL --
 
