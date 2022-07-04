@@ -23,3 +23,5 @@ local lua_options = {
 for key, value in pairs(lua_options) do
   vim.opt[key] = value
 end
+
+vim.cmd[[autocmd BufWritePre * %s/\s\+$//e]]

@@ -48,9 +48,9 @@ vim.g.maplocalleader = " "
   map("n", "<leader>v", "<C-v>", opts)
 
   -- Save the file
-  map("n",  "s", ":w<CR>",                           opts) -- Save
-  map("n",  "S", ":%s/\\s\\+$//e<CR>ZZ",             opts) -- Save & Quit
-  map("n", "<leader>x", ":%s/\\s\\+$//e<CR>:q!<CR>", opts) -- Quit without saving
+  map("n",  "s",        ":w<CR>",  opts) -- Save
+  map("n",  "S",        "ZZ",      opts) -- Save & Quit
+  map("n", "<leader>x", ":q!<CR>", opts) -- Quit without saving
 
   -- Go to line extremes
   map("n", "<A-i>", "0", opts) -- Go to begining
