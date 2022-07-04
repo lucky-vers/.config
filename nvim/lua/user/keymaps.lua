@@ -24,6 +24,10 @@ vim.g.maplocalleader = " "
   map("n", "<A-{>", "{", opts)
   map("n", "<A-}>", "}", opts)
 
+  -- Indent with one key
+  map("n", "<", "<<", opts) -- Indent left
+  map("n", ">", ">>", opts) -- Indent right
+
   -- Create splits
   map("n", "<A-h>", "<C-w>s", opts) -- Horizontal split
   map("n", "<A-v>", "<C-w>v", opts) -- Vertical split
@@ -78,9 +82,6 @@ vim.g.maplocalleader = " "
 
   -- Start plugin EasyAlign
   map("n", "ga", "<Plug>(EasyAlign)", opts)
-
-  -- Redo
-  map("n", "R", "<C-r>", opts)
 
   -- Disable search highlighting termporarily
   map("n", "<ESC>", ":noh<CR>", opts)
