@@ -20,10 +20,6 @@ vim.g.maplocalleader = " "
 
 -- NORMAL --
 
-  -- Move across paragraphs
-  map("n", "<A-{>", "{", opts)
-  map("n", "<A-}>", "}", opts)
-
   -- Indent with one key
   map("n", "<", "<<", opts) -- Indent left
   map("n", ">", ">>", opts) -- Indent right
@@ -100,7 +96,7 @@ vim.g.maplocalleader = " "
 
   -- Autocomplete brackets and quotes
   map("i", "\"", "\"\"<ESC>i", opts) -- Double quotes
-  map("i", "\'", "\'\'<ESC>i", opts) -- Single quotes
+  map("i", "'", "\'\'<ESC>i", opts) -- Single quotes
   map("i", "(", "()<ESC>i",    opts) -- Circle brackets
   map("i", "[", "[]<ESC>i",    opts) -- Square brackets
   map("i", "{", "{}<ESC>i",    opts) -- Curly brackets
@@ -115,16 +111,12 @@ vim.g.maplocalleader = " "
   map("v", "<", "<gv", opts) -- Indent left
   map("v", ">", ">gv", opts) -- Indent right
 
-  -- Move across paragraphs
-  map("v", "<A-{>", "{", opts)
-  map("v", "<A-}>", "}", opts)
-
   -- Add brackets and quotes to selection
-  map("v", "\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
-  map("v", "\'", "<ESC>`>a\'<ESC>`<i\'<ESC>", opts)
-  map("v", "{",  "<ESC>`>a}<ESC>`<i{<ESC>",   opts)
-  map("v", "(",  "<ESC>`>a)<ESC>`<i(<ESC>",   opts)
-  map("v", "[",  "<ESC>`>a]<ESC>`<i[<ESC>",   opts)
+  map("v", "<leader>\"", "<ESC>`>a\"<ESC>`<i\"<ESC>", opts)
+  map("v", "<leader>'",  "<ESC>`>a\'<ESC>`<i\'<ESC>", opts)
+  map("v", "<leader>{",  "<ESC>`>a}<ESC>`<i{<ESC>",   opts)
+  map("v", "<leader>(",  "<ESC>`>a)<ESC>`<i(<ESC>",   opts)
+  map("v", "<leader>[",  "<ESC>`>a]<ESC>`<i[<ESC>",   opts)
 
   -- Move text up and down
   map("v", "<A-j>", ":m .+1<CR>==", opts)
