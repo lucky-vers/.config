@@ -17,7 +17,7 @@ truncation_symbol = "/"
 [git_branch]
 symbol            = ""
 style             = "fg:#8ec07c"
-format            = " on [$symbol $branch]($style)"
+format            = " [on](fg:#fabd2f) [$symbol $branch]($style)"
 
 [git_status]
 style             = "fg:#8ec07c"
