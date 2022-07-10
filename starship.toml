@@ -12,7 +12,7 @@ format            = "[$path]($style)[$read_only]($read_only_style)"
 style             = "fg:#d3869b"
 read_only         = " "
 read_only_style   = "fg:#d3869b"
-truncation_symbol = "../"
+truncation_symbol = "/"
 
 [git_branch]
 symbol            = ""
