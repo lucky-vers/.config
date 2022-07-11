@@ -52,6 +52,9 @@ vim.g.maplocalleader = " "
   map("n",  "S",        "ZZ",      opts) -- Save & Quit
   map("n", "<leader>x", ":q!<CR>", opts) -- Quit without saving
 
+  -- Execute line as a bash command
+  map("n", "<leader><Enter>", ":.!bash<CR><CR>", opts)
+
   -- Go to line extremes
   map("n", "<A-i>", "0", opts) -- Go to begining
   map("n", "<A-a>", "$", opts) -- Go to end
