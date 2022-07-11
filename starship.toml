@@ -9,9 +9,9 @@ add_newline = false
 
 [directory]
 format            = "[$path]($style)[$read_only]($read_only_style)"
-style             = "fg:#d3869b"
+style             = "bold fg:#d3869b"
 read_only         = " "
-read_only_style   = "fg:#d3869b"
+read_only_style   = "bold fg:#d3869b"
 truncation_symbol = "//"
 
 [git_branch]
@@ -20,7 +20,7 @@ style             = "fg:#8ec07c"
 format            = " [on](fg:#fabd2f) [$symbol $branch]($style)"
 
 [git_status]
-style             = "fg:#8ec07c"
+style             = "bold fg:#8ec07c"
 format            = "[$all_status$ahead_behind]($style)"
 conflicted        = " ?"
 untracked         = " ~"
