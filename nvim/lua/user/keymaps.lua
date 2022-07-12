@@ -63,7 +63,7 @@ vim.g.maplocalleader = " "
   map("n", "<C-a>", "gg0vG$", opts)
 
   -- Search and Replace
-  map("n", "<leader>r", ":%s//g<left><left>", opts)
+  map("n", "<leader>r", ":%s//g<Left><Left>", opts)
 
   -- Increment numbers
   map("n", "=", "<C-a>", opts) -- Increase value
@@ -72,8 +72,11 @@ vim.g.maplocalleader = " "
   -- Move to middle while scrolling to bottom
   map("n", "G", "Gzz", opts)
 
-  -- Add a space
+  -- Add spaces
   map("n", ",", "i<SPACE><ESC>", opts)
+
+  -- Add tabs
+  map("n", "<A-,>", "i<SPACE><SPACE><ESC><Left>", opts)
 
   -- Move text up and down
   map("n", "<A-j>", ":m .+1<CR>", opts)
@@ -140,6 +143,10 @@ vim.g.maplocalleader = " "
 
   -- Add spaces
   map("x", ",", "I<SPACE><ESC>gv", opts)
+
+  -- Add tabs
+  map("x", "<A-,>", "I<SPACE><SPACE><ESC>gv", opts)
+
 
 -- TERMINAL --
 
