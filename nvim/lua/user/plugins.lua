@@ -74,6 +74,16 @@ return packer.startup(function(use)
     use "RRethy/vim-illuminate"               -- Highlight similar words
     use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
 
+    use {                                     -- Neo Tree
+  "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
+
   -- Color Schemes
     use "gruvbox-community/gruvbox"        -- Gruvbox
     use "catppuccin/nvim"                  -- Catpuccin
