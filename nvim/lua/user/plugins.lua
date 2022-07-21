@@ -62,16 +62,17 @@ packer.init {
 return packer.startup(function(use)
 
   -- General
-    use "wbthomason/packer.nvim"           -- Have packer manage itself
-    use "nvim-lua/popup.nvim"              -- An implementation of the Popup API from vim in Neovim
-    use "nvim-lua/plenary.nvim"            -- Useful lua functions used ny lots of plugins
-    use "vim-airline/vim-airline"          -- A simple status bar
-    use "vim-airline/vim-airline-themes"   -- Themes for the status bar
-    use "psliwka/vim-smoothie"             -- Vim smooth scrolling
-    use "nvim-telescope/telescope.nvim"    -- Telescope
-    use "junegunn/vim-easy-align"          -- Align objects easily
-    use "airblade/vim-gitgutter"           -- Show git diffs
-    use "RRethy/vim-illuminate"            -- Highlight similar words
+    use "wbthomason/packer.nvim"              -- Have packer manage itself
+    use "nvim-lua/popup.nvim"                 -- An implementation of the Popup API from vim in Neovim
+    use "nvim-lua/plenary.nvim"               -- Useful lua functions used ny lots of plugins
+    use "vim-airline/vim-airline"             -- A simple status bar
+    use "vim-airline/vim-airline-themes"      -- Themes for the status bar
+    use "psliwka/vim-smoothie"                -- Vim smooth scrolling
+    use "nvim-telescope/telescope.nvim"       -- Telescope
+    use "junegunn/vim-easy-align"             -- Align objects easily
+    use "airblade/vim-gitgutter"              -- Show git diffs
+    use "RRethy/vim-illuminate"               -- Highlight similar words
+    use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
 
   -- Color Schemes
     use "gruvbox-community/gruvbox"        -- Gruvbox
@@ -90,9 +91,9 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lsp"             -- LSP Completion
     use "saadparwaiz1/cmp_luasnip"         -- Snippet Completions
 
-  -- Snippets
-    use "L3MON4D3/LuaSnip"                 -- Snippet Engine
-    use "rafamadriz/friendly-snippets"     -- A Bunch of Snippets to use
+ -- Snippets
+   use "L3MON4D3/LuaSnip"                 -- Snippet Engine
+   use "rafamadriz/friendly-snippets"     -- A Bunch of Snippets to use
 
   -- LSP
     use "neovim/nvim-lspconfig"            -- LSP Enabler
