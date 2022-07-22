@@ -19,11 +19,11 @@ require('lualine').setup {
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {{'filename', symbols = {modified = ' ', readonly = ' ', unnamed = '[NO NAME]'}, path = 0}},
+    lualine_c = {{'filename', symbols = {modified = ' ', readonly = ' ', unnamed = '[NO NAME]', path = 3}}},
     lualine_x = {'location'},
     lualine_y = {},
     lualine_z = {}
   },
   tabline = {},
-  extensions = {}
+  extensions = {'neo-tree'}
 }
