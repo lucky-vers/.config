@@ -20,6 +20,9 @@ vim.g.maplocalleader = " "
 
 -- NORMAL --
 
+  -- Neo Tree
+    map("n", "\\", ":Neotree toggle<CR>", opts)
+
   -- Indent with one key
     map("n", "<", "<<", opts) -- Indent left
     map("n", ">", ">>", opts) -- Indent right
