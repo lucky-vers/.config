@@ -65,14 +65,13 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"              -- Have packer manage itself
     use "nvim-lua/popup.nvim"                 -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim"               -- Useful lua functions used ny lots of plugins
-    use "vim-airline/vim-airline"             -- A simple status bar
-    use "vim-airline/vim-airline-themes"      -- Themes for the status bar
     use "psliwka/vim-smoothie"                -- Vim smooth scrolling
     use "nvim-telescope/telescope.nvim"       -- Telescope
     use "junegunn/vim-easy-align"             -- Align objects easily
     use "airblade/vim-gitgutter"              -- Show git diffs
     use "RRethy/vim-illuminate"               -- Highlight similar words
     use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
+    use "nvim-lualine/lualine.nvim"            -- Lualine
 
     use {                                     -- Neo Tree
   "nvim-neo-tree/neo-tree.nvim",

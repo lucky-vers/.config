@@ -1,9 +1,11 @@
 vim.cmd[[let g:neo_tree_remove_legacy_commands = 1 ]] -- Remove legaacy commands
 vim.cmd[[
-  hi NeoTreeGitModified  guibg=NONE guifg=#8ec07c
-  hi NeoTreeGitUntracked guibg=NONE guifg=#d3869b
-  hi NeoTreeExpander     guibg=NONE guifg=#b8bb26
-  hi NeoTreeDimText      guibg=NONE guifg=#7c6f64
+  hi NeoTreeGitModified       guibg=NONE guifg=#8ec07c
+  hi NeoTreeGitUntracked      guibg=NONE guifg=#d3869b
+  hi NeoTreeExpander          guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryIcon     guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryName     guibg=NONE guifg=#83a598
+  hi NeoTreeDimText           guibg=NONE guifg=#7c6f64
 ]]
 
 vim.fn.sign_define("DiagnosticSignError", {text = " ", texthl = "DiagnosticSignError"})
@@ -44,7 +46,7 @@ require("neo-tree").setup({
       highlight     = "NeoTreeFileIcon"
     },
     modified = {
-      symbol    = "++",
+      symbol    = " +",
       highlight = "NeoTreeModified",
     },
     name = {
@@ -54,8 +56,8 @@ require("neo-tree").setup({
     git_status = {
       symbols = {
         -- Change type
-        added     = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
-        modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
+        added     = "",  -- or "✚", but this is redundant info if you use git_status_colors on the name
+        modified  = "",  -- or "", but this is redundant info if you use git_status_colors on the name
         deleted   = "﫧",-- this can only be used in the git_status source
         renamed   = "凜",-- this can only be used in the git_status source
         -- Status type
@@ -69,16 +71,12 @@ require("neo-tree").setup({
   },
   window = {
     position = "left",
-    width = 40,
+    width    = 40,
     mapping_options = {
       noremap = true,
       nowait = true,
     },
     mappings = {
-      ["<space>"] = {
-          "toggle_node",
-          nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
-      },
       ["<2-LeftMouse>"] = "open",
       ["<cr>"]          = "open",
       ["S"]             = "open_split",

@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/verma/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
@@ -193,16 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/dracula/vim"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
-  },
-  ["vim-airline-themes"] = {
-    loaded = true,
-    path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-colors-solarized"] = {
     loaded = true,
