@@ -7,7 +7,7 @@ telescope.load_extension('media_files')
 
 local actions = require "telescope.actions"
 
-telescope.setup {
+telescope.setup({
   defaults = {
 
     prompt_prefix = " ",
@@ -101,4 +101,4 @@ telescope.setup {
     -- }
     -- please take a look at the readme of the extension you want to configure
   },
-}
+})
