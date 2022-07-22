@@ -150,7 +150,6 @@ vim.g.maplocalleader = " "
   -- Add tabs
     map("x", "<A-,>", "I<SPACE><SPACE><ESC>gv", opts)
 
-
 -- TERMINAL --
 
   -- Better terminal navigation
