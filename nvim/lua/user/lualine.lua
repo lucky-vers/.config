@@ -1,4 +1,4 @@
-require('lualine').setup {
+require('lualine').setup({
   options = {
     icons_enabled        = true,
     theme                = 'gruvbox',
@@ -26,4 +26,4 @@ require('lualine').setup {
   },
   tabline = {},
   extensions = { 'neo-tree' }
-}
+})
