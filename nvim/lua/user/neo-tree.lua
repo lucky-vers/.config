@@ -1,11 +1,12 @@
-vim.cmd[[let g:neo_tree_remove_legacy_commands = 1 ]] -- Remove legaacy commands
+vim.cmd[[let g:neo_tree_remove_legacy_commands = 1 ]] -- Remove legacy commands
 vim.cmd[[
-  hi NeoTreeGitModified       guibg=NONE guifg=#8ec07c
-  hi NeoTreeGitUntracked      guibg=NONE guifg=#d3869b
-  hi NeoTreeExpander          guibg=NONE guifg=#83a598
-  hi NeoTreeDirectoryIcon     guibg=NONE guifg=#83a598
-  hi NeoTreeDirectoryName     guibg=NONE guifg=#83a598
-  hi NeoTreeDimText           guibg=NONE guifg=#7c6f64
+  hi NeoTreeGitModified   guibg=NONE guifg=#8ec07c
+  hi NeoTreeGitUntracked  guibg=NONE guifg=#d3869b
+  hi NeoTreeGitAdded      guibg=NONE guifg=#b8bb26
+  hi NeoTreeExpander      guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryIcon guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryName guibg=NONE guifg=#83a598
+  hi NeoTreeDimText       guibg=NONE guifg=#7c6f64
 ]]
 
 vim.fn.sign_define("DiagnosticSignError", {text = " ", texthl = "DiagnosticSignError"})
@@ -14,7 +15,7 @@ vim.fn.sign_define("DiagnosticSignInfo",  {text = " ", texthl = "DiagnosticSi
 vim.fn.sign_define("DiagnosticSignHint",  {text = "", texthl  = "DiagnosticSignHint"})
 
 require("neo-tree").setup({
-  close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
+  close_if_last_window = true,
   popup_border_style = "rounded",
   enable_git_status = true,
   enable_diagnostics = true,
@@ -46,7 +47,7 @@ require("neo-tree").setup({
       highlight     = "NeoTreeFileIcon"
     },
     modified = {
-      symbol    = " +",
+      symbol    = "++",
       highlight = "NeoTreeModified",
     },
     name = {
@@ -71,7 +72,7 @@ require("neo-tree").setup({
   },
   window = {
     position = "left",
-    width    = 40,
+    width    = 28,
     mapping_options = {
       noremap = true,
       nowait = true,
@@ -81,13 +82,10 @@ require("neo-tree").setup({
       ["<cr>"]          = "open",
       ["S"]             = "open_split",
       ["s"]             = "open_vsplit",
-      -- ["S"] = "split_with_window_picker",
-      -- ["s"] = "vsplit_with_window_picker",
       ["t"]             = "open_tabnew",
       ["w"]             = "open_with_window_picker",
       ["C"]             = "close_node",
       ["z"]             = "close_all_nodes",
-      --["Z"] = "expand_all_nodes",
       ["a"] = {
         "add",
         -- some commands may take optional config options, see `:h neo-tree-mappings` for details
@@ -153,7 +151,7 @@ require("neo-tree").setup({
   },
   buffers = {
     follow_current_file = true, -- This will find and focus the file in the active buffer every
-                                 -- time the current file is changed while the tree is open.
+                                -- time the current file is changed while the tree is open.
     group_empty_dirs = true, -- when true, empty folders will be grouped together
     show_unloaded = true,
     window = {
