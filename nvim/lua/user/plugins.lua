@@ -71,7 +71,7 @@ return packer.startup(function(use)
     use "airblade/vim-gitgutter"              -- Show git diffs
     use "RRethy/vim-illuminate"               -- Highlight similar words
     use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
-    use "nvim-lualine/lualine.nvim"            -- Lualine
+    use "nvim-lualine/lualine.nvim"           -- Lualine
 
     use {                                     -- Neo Tree
   "nvim-neo-tree/neo-tree.nvim",
