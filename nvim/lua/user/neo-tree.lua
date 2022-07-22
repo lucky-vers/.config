@@ -7,6 +7,7 @@ vim.cmd[[
   hi NeoTreeDirectoryIcon guibg=NONE guifg=#83a598
   hi NeoTreeDirectoryName guibg=NONE guifg=#83a598
   hi NeoTreeDimText       guibg=NONE guifg=#7c6f64
+  hi NeoTreeFileName      guibg=NONE guifg=#cdccab
 ]]
 
 vim.fn.sign_define("DiagnosticSignError", {text = " ", texthl = "DiagnosticSignError"})
@@ -43,7 +44,7 @@ require("neo-tree").setup({
       folder_closed = "",
       folder_open   = "",
       folder_empty  = "",
-      default       = "",
+      default       = "",
       highlight     = "NeoTreeFileIcon"
     },
     modified = {
