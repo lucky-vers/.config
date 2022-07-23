@@ -13,5 +13,5 @@ vim.cmd[[
 
   set cursorline
   set cursorlineopt=number
-  hi CursorLineNr cterm=bold term=bold gui=bold guibg=#282828 guifg=#d5c4a1
+  hi  CursorLineNr cterm=bold term=bold gui=bold guibg=NONE guifg=#d5c4a1
 ]]

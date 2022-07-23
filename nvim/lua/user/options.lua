@@ -25,3 +25,7 @@ for key, value in pairs(lua_options) do
 end
 
 vim.cmd[[autocmd BufWritePre * %s/\s\+$//e]] -- Automatically remove whitespace during filesave
+vim.cmd[[
+  set pumblend=18
+  hi PmenuSel blend=0
+]] -- Set cmp menu transparency
