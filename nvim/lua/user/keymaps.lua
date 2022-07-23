@@ -55,9 +55,9 @@ vim.g.maplocalleader = " "
     map("n", "<leader>v", "<C-v>", opts)
 
   -- Save the file
-    map("n",  "s",        ":w<CR>",  opts) -- Save
-    map("n",  "S",        "ZZ",      opts) -- Save & Quit
-    map("n", "<leader>x", ":q!<CR>", opts) -- Quit without saving
+    map("n",  "s",        ":w<CR>",                  opts) -- Save
+    map("n",  "S",        ":w<CR>:Bdelete<CR>",      opts) -- Save & Quit
+    map("n", "<leader>x", ":q!<CR>",                 opts) -- Quit without saving
 
   -- Execute line as a bash command
     map("n", "<leader><Enter>", ":.!bash<CR><CR>", opts)
