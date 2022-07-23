@@ -1,5 +1,3 @@
--- Lua Options
-
 local lua_options = {
   mouse         = "a",     -- Allow mouse control
   expandtab     = true,    -- Change tabs to spaces

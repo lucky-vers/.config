@@ -10,4 +10,4 @@ vim.cmd[[
   let g:gitgutter_sign_removed_first_line      = '│'
   let g:gitgutter_sign_removed_above_and_below = '│'
   let g:gitgutter_sign_modified_removed        = '│'
-]]
+]] -- Change git sign colors and symbols

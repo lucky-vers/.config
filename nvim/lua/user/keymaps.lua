@@ -56,10 +56,10 @@ vim.g.maplocalleader = " "
     map("n", "<leader>v", "<C-v>", opts)
 
   -- Save the file
-    map("n",  "s",   ":w<CR>",              opts) -- Save
-    map("n",  "S",   "ZZ",                  opts) -- Save & Quit all buffers
-    map("n", "<A-x>", ":w<CR>:Bdelete<CR>", opts) -- Save & Quit one buffer
-    map("n", "<leader>x", ":q!<CR>",        opts) -- Quit without saving
+    map("n",  "s",        ":wa<CR>",             opts) -- Save
+    map("n",  "S",        ":xa<CR>",             opts) -- Save & Quit all buffers
+    map("n", "<A-x>",     ":w<CR>:Bdelete<CR>",  opts) -- Save & Quit one buffer
+    map("n", "<leader>x", ":q!<CR>",             opts) -- Quit without saving
 
   -- Execute line as a bash command
     map("n", "<leader><Enter>", ":.!bash<CR><CR>", opts)
