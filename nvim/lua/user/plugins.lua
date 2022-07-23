@@ -72,6 +72,8 @@ return packer.startup(function(use)
     use "RRethy/vim-illuminate"               -- Highlight similar words
     use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
     use "nvim-lualine/lualine.nvim"           -- Lualine
+    use "glepnir/dashboard-nvim"              -- Dashboard
+    use "akinsho/toggleterm.nvim"             -- Toggleterm
 
     use {                                     -- Neo Tree
   "nvim-neo-tree/neo-tree.nvim",
