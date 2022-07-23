@@ -2,12 +2,12 @@ vim.cmd[[let g:neo_tree_remove_legacy_commands = 1 ]] -- Remove legacy commands
 vim.cmd[[
   hi NeoTreeGitModified   guibg=NONE guifg=#8ec07c
   hi NeoTreeGitUntracked  guibg=NONE guifg=#d3869b
-  hi NeoTreeGitAdded      guibg=NONE guifg=#b8bb26
-  hi NeoTreeExpander      guibg=NONE guifg=#b8bb26
-  hi NeoTreeDirectoryIcon guibg=NONE guifg=#b8bb26
-  hi NeoTreeDirectoryName guibg=NONE guifg=#b8bb26
+  hi NeoTreeGitAdded      guibg=NONE guifg=#83a598
+  hi NeoTreeExpander      guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryIcon guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryName guibg=NONE guifg=#83a598
   hi NeoTreeDimText       guibg=NONE guifg=#7c6f64
-  hi NeoTreeFileName      guibg=NONE guifg=#83a598
+  hi NeoTreeFileName      guibg=NONE guifg=#ebdbb2
 ]]
 
 vim.fn.sign_define("DiagnosticSignError", {text = " ", texthl = "DiagnosticSignError"})
