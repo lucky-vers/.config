@@ -69,7 +69,6 @@ return packer.startup(function(use)
     use "junegunn/vim-easy-align"             -- Align objects easily
     use "airblade/vim-gitgutter"              -- Show git diffs
     use "RRethy/vim-illuminate"               -- Highlight similar words
-    use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
     use "nvim-lualine/lualine.nvim"           -- Lualine
     use "glepnir/dashboard-nvim"              -- Create an opening dashboard
     use "akinsho/toggleterm.nvim"             -- Use terminal inside nvim better
