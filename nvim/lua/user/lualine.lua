@@ -2,7 +2,7 @@ require('lualine').setup({
   options = {
     icons_enabled        = true,
     theme                = 'gruvbox',
-    component_separators = { left = '', right = '' },
+    component_separators = { left = '', right = ''},
     section_separators   = { left = '', right = '' },
     disabled_filetypes   = {},
     always_divide_middle = true,
@@ -13,7 +13,7 @@ require('lualine').setup({
     lualine_b = { { 'branch', icon = '' }, 'diff', 'diagnostics' },
     lualine_c = { 'filesize', { 'filename', symbols = { modified = ' ', readonly = ' ', unnamed = '[NO NAME]' }, path = 3 } },
     lualine_x = { 'encoding', 'fileformat' },
-    lualine_y = { { 'filetype', colored = false  } },
+    lualine_y = { { 'filetype', colored = false } },
     lualine_z = { 'progress', 'location' }
   },
   inactive_sections = {
