@@ -63,11 +63,11 @@ require("neo-tree").setup({
         deleted   = "﫧",-- this can only be used in the git_status source
         renamed   = "凜",-- this can only be used in the git_status source
         -- Status type
-        untracked = "<~>",
+        untracked = "?",
         ignored   = "",
         unstaged  = "!",
         staged    = "+",
-        conflict  = "?",
+        conflict  = "=!=",
       }
     },
   },
