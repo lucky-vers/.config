@@ -8,6 +8,7 @@ local map = vim.api.nvim_set_keymap
   map("", "<SPACE>", "<Nop>", opts)
 
 vim.g.mapleader      = " "
+
 vim.g.maplocalleader = " "
 
 -- Mode indicators

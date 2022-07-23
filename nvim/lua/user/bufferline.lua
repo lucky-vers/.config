@@ -12,13 +12,13 @@ require("bufferline").setup({
     middle_mouse_command         = nil,
     indicator_icon               = "",
     buffer_close_icon            = "",
-    modified_icon                = "●",
+    modified_icon                = "!",
     close_icon                   = "",
     left_trunc_marker            = "<~",
     right_trunc_marker           = "~>",
-    max_name_length              = 30,
+    max_name_length              = 24,
     max_prefix_length            = 30, -- prefix used when a buffer is de-duplicated
-    tab_size                     = 21,
+    tab_size                     = 25,
     diagnostics                  = false, -- | "nvim_lsp" | "coc",
     diagnostics_update_in_insert = false,
     show_buffer_icons            = false,
@@ -96,15 +96,15 @@ require("bufferline").setup({
     },
 
     modified = {
-      guifg = { attribute = "fg", highlight = "TabLine" },
+      guifg = '#d65d0e',
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
     modified_selected = {
-      guifg = { attribute = "fg", highlight = "Normal" },
+      guifg = '#fe8019',
       guibg = '#504945',
     },
     modified_visible = {
-      guifg = { attribute = "fg", highlight = "TabLine" },
+      guifg = '#d65d0e',
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
 
