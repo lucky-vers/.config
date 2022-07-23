@@ -7,9 +7,9 @@ if not status_ok then
 end
 
 vim.cmd[[
-  hi Visual     guifg=none      guibg=#495551 gui=none
+  hi Visual     guifg=NONE      guibg=#495551 gui=NONE
   hi Search     guifg=#4d5f47   guibg=#8ec07c
-  hi SignColumn                 guibg=#282828 gui=none
+  hi SignColumn                 guibg=#282828 gui=NONE
 
   set cursorline
   set cursorlineopt=number

@@ -3,9 +3,9 @@ vim.cmd[[
   hi NeoTreeGitModified   guibg=NONE guifg=#8ec07c
   hi NeoTreeGitUntracked  guibg=NONE guifg=#d3869b
   hi NeoTreeGitAdded      guibg=NONE guifg=#b8bb26
-  hi NeoTreeExpander      guibg=NONE guifg=#458588
-  hi NeoTreeDirectoryIcon guibg=NONE guifg=#458588
-  hi NeoTreeDirectoryName guibg=NONE guifg=#458588
+  hi NeoTreeExpander      guibg=NONE guifg=#b8bb26
+  hi NeoTreeDirectoryIcon guibg=NONE guifg=#b8bb26
+  hi NeoTreeDirectoryName guibg=NONE guifg=#b8bb26
   hi NeoTreeDimText       guibg=NONE guifg=#7c6f64
   hi NeoTreeFileName      guibg=NONE guifg=#83a598
 ]]
