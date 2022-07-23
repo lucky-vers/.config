@@ -66,7 +66,6 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"                 -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim"               -- Useful lua functions used ny lots of plugins
     use "psliwka/vim-smoothie"                -- Vim smooth scrolling
-    use "nvim-telescope/telescope.nvim"       -- Telescope
     use "junegunn/vim-easy-align"             -- Align objects easily
     use "airblade/vim-gitgutter"              -- Show git diffs
     use "RRethy/vim-illuminate"               -- Highlight similar words
