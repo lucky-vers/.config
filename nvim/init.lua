@@ -1,4 +1,3 @@
-require "user.blankline"
 require "user.cmp"
 require "user.colorschemes"
 require "user.gitgutter"

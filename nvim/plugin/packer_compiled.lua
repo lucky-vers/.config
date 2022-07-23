@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/home/verma/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/lualine.nvim",
