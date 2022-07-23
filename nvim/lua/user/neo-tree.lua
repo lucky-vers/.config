@@ -67,7 +67,7 @@ require("neo-tree").setup({
         ignored   = "",
         unstaged  = "!",
         staged    = "+",
-        conflict  = "=!=",
+        conflict  = "=/=",
       }
     },
   },
