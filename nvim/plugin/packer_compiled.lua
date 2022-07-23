@@ -209,6 +209,16 @@ _G.packer_plugins = {
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/dracula/vim"
   },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-bufferline"] = {
+    loaded = true,
+    path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-bufferline",
+    url = "https://github.com/bling/vim-bufferline"
+  },
   ["vim-colors-solarized"] = {
     loaded = true,
     path = "/home/verma/.local/share/nvim/site/pack/packer/start/vim-colors-solarized",

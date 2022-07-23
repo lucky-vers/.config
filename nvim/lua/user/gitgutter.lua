@@ -2,7 +2,7 @@ vim.cmd[[
   hi GitGutterAdd          guibg=NONE
   hi GitGutterChange       guibg=NONE
   hi GitGutterDelete       guibg=NONE
-  hi GitGutterChangeDelete guibg=NONE
+  hi GitGutterChangeDelete guibg=NONE guifg=#fabd2f
 
   let g:gitgutter_sign_added                   = '│'
   let g:gitgutter_sign_modified                = '│'

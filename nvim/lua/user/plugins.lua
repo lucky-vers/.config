@@ -72,11 +72,12 @@ return packer.startup(function(use)
     use "RRethy/vim-illuminate"               -- Highlight similar words
     use "lukas-reineke/indent-blankline.nvim" -- Show blank spaces
     use "nvim-lualine/lualine.nvim"           -- Lualine
-    use "glepnir/dashboard-nvim"              -- Dashboard
-    use "akinsho/toggleterm.nvim"             -- Toggleterm
+    use "glepnir/dashboard-nvim"              -- Create an opening dashboard
+    use "akinsho/toggleterm.nvim"             -- Use terminal inside nvim better
+    use "bling/vim-bufferline"                -- Show buffers
+    use "moll/vim-bbye"                       -- Delete buffers
 
-    use {                                     -- Neo Tree
-  "nvim-neo-tree/neo-tree.nvim",
+    use { "nvim-neo-tree/neo-tree.nvim",      -- Neotee
     branch = "v2.x",
     requires = {
       "nvim-lua/plenary.nvim",
