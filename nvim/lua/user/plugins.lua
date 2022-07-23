@@ -74,7 +74,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim"           -- Lualine
     use "glepnir/dashboard-nvim"              -- Create an opening dashboard
     use "akinsho/toggleterm.nvim"             -- Use terminal inside nvim better
-    use "bling/vim-bufferline"                -- Show buffers
+    use "akinsho/bufferline.nvim"
     use "moll/vim-bbye"                       -- Delete buffers
 
     use { "nvim-neo-tree/neo-tree.nvim",      -- Neotee

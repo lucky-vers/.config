@@ -21,7 +21,11 @@ vim.g.maplocalleader = " "
 -- NORMAL --
 
   -- Neo Tree
-    map("n", "\\", ":Neotree toggle<CR>", opts)
+    map("n", "\\", ":Neotree toggle<CR>", opts) -- Toggle neo-tree
+
+  -- Bufferline
+    map("n", "<TAB>", ":BufferLineCycleNext<CR>", opts)
+    map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
 
   -- Indent with one key
     map("n", "<", "<<", opts) -- Indent left
