@@ -33,8 +33,6 @@ vim.cmd[[
 
 -- Show tabs, trailing whitespace and spaces
 vim.cmd[[
-  set listchars+=space:·
-  set listchars+=trail:×
-  set listchars+=tab:<>
+  set listchars+=space:·,trail:×,tab:<>
   set list
 ]]
