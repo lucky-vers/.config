@@ -22,11 +22,16 @@ for key, value in pairs(lua_options) do
   vim.opt[key] = value
 end
 
-vim.cmd[[autocmd BufWritePre * %s/\s\+$//e]] -- Automatically remove whitespace during filesave
+-- Automatically remove whitespace during filesave
+vim.cmd[[autocmd BufWritePre * %s/\s\+$//e]]
+
+-- Set cmp menu transparency
 vim.cmd[[
   set pumblend=18
   hi PmenuSel blend=0 guibg=#8ec07c guifg=#282828
-]] -- Set cmp menu transparency
+]]
+
+-- Show tabs, trailing whitespace and spaces
 vim.cmd[[
   set listchars+=space:·
   set listchars+=trail:×
