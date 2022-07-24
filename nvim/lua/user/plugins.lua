@@ -24,10 +24,8 @@ end
 
 vim.cmd [[
   augroup packer_user_config
-
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
-
   augroup end
 ]]
 
@@ -43,19 +41,7 @@ end
 
 -- Have packer use a popup window
 
-packer.init {
-
-  display = {
-
-    open_fn = function()
-
-      return require("packer.util").float { border = "rounded" }
-
-    end,
-
-  },
-
-}
+packer.init { display = { open_fn = function() return require("packer.util").float({ border = "solid" }) end } }
 
 -- Install your plugins here
 
