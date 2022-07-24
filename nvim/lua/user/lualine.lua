@@ -11,7 +11,7 @@ require('lualine').setup({
   sections = {
     lualine_a = { 'mode' },
     lualine_b = { { 'branch', icon = '' }, 'diff', 'diagnostics' },
-    lualine_c = { 'filesize', { 'filename', symbols = { modified = ' ', readonly = ' ', unnamed = '[NO NAME]' }, path = 3 } },
+    lualine_c = { 'filesize', { 'filename', symbols = { modified = ' ', readonly = ' ', unnamed = '[No Name]' }, path = 3 } },
     lualine_x = { 'encoding', 'fileformat' },
     lualine_y = { { 'filetype', colored = false } },
     lualine_z = { 'progress', 'location' }
@@ -19,7 +19,7 @@ require('lualine').setup({
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = { { 'filename', symbols = { modified = ' ', readonly = ' ', unnamed = '[NO NAME]', path = 3 } } },
+    lualine_c = { { 'filename', symbols = { modified = ' ', readonly = ' ', unnamed = '[No Name]', path = 3 } } },
     lualine_x = { 'location' },
     lualine_y = {},
     lualine_z = {}
