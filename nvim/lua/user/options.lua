@@ -27,3 +27,7 @@ vim.cmd[[
   set pumblend=18
   hi PmenuSel blend=0 guibg=#8ec07c guifg=#282828
 ]] -- Set cmp menu transparency
+vim.cmd[[
+  set listchars+=space:·
+  set list
+]]
