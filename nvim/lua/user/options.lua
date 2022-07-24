@@ -25,5 +25,5 @@ end
 vim.cmd[[autocmd BufWritePre * %s/\s\+$//e]] -- Automatically remove whitespace during filesave
 vim.cmd[[
   set pumblend=18
-  hi PmenuSel blend=0
+  hi PmenuSel blend=0 guibg=#8ec07c guifg=#282828
 ]] -- Set cmp menu transparency
