@@ -29,7 +29,7 @@ require("bufferline").setup({
     enforce_regular_tabs         = true,
     always_show_bufferline       = true,
     separator_style              = "thin",
-    offsets                      = { { filetype = "neo-tree", text = "", padding = 0 } },
+    offsets                      = {{ filetype = "neo-tree", text = "", padding = 0 }},
   },
   highlights = {
 
