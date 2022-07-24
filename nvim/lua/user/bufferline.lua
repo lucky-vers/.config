@@ -100,11 +100,11 @@ require("bufferline").setup({
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
     modified_selected = {
-      guifg = '#fe8019',
+      guifg = '#ebdbb2',
       guibg = '#504945',
     },
     modified_visible = {
-      guifg = '#d65d0e',
+      guifg = '#7c6f64',
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
 
