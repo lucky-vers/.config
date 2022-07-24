@@ -29,5 +29,7 @@ vim.cmd[[
 ]] -- Set cmp menu transparency
 vim.cmd[[
   set listchars+=space:·
+  set listchars+=trail:×
+  set listchars+=tab:<>
   set list
 ]]

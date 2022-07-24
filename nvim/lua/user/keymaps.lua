@@ -57,7 +57,7 @@ vim.g.maplocalleader = " "
 
   -- Save the file
     map("n",  "s",        ":wa<CR>",             opts) -- Save
-    map("n",  "S",        ":wa<CR>:q<CR>",             opts) -- Save & Quit all buffers
+    map("n",  "S",        ":wa<CR>:q<CR>",       opts) -- Save & Quit all buffers
     map("n", "<A-x>",     ":w<CR>:Bdelete<CR>",  opts) -- Save & Quit one buffer
     map("n", "<leader>x", ":q!<CR>",             opts) -- Quit without saving
 

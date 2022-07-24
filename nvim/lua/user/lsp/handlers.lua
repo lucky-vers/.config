@@ -16,11 +16,11 @@ vim.cmd [[
 
 local config = {
   -- disable virtual text
-  virtual_text = false,
+  virtual_text     = false,
   -- show signs
   update_in_insert = true,
-  underline = false,
-  severity_sort = true,
+  underline        = false,
+  severity_sort    = true,
   float = {
     focusable = false,
     style     = "minimal",
@@ -31,7 +31,7 @@ local config = {
   },
 }
 
-  vim.diagnostic.config(config)
+vim.diagnostic.config(config)
 
 end
 
@@ -42,7 +42,7 @@ local function lsp_highlight_document(client)
       [[
       augroup lsp_document_highlight
         autocmd! * <buffer>
-        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+        autocmd CursorHold  <buffer> lua vim.lsp.buf.document_highlight()
         autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
       augroup END
     ]],
