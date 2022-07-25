@@ -5,11 +5,11 @@ $git_status \
 $character\
 """
 
-add_newline = false
+add_newline       = false
 
 [character]
-success_symbol = "[](fg:#b8bb26)"
-error_symbol   = "[](fg:#fb4934)"
+success_symbol    = "[](fg:#b8bb26)"
+error_symbol      = "[](fg:#fb4934)"
 
 [directory]
 format            = "[$path]($style)[$read_only]($read_only_style)"
