@@ -34,11 +34,9 @@ colors:
 core:
   normal_text:
     foreground: fg
-    background: bg
 
   regular_file:
     foreground: fg
-    background: bg
 
   reset_to_normal: {}
 
@@ -169,13 +167,11 @@ programming:
 
     php:
       foreground: purple
-      font-style: italic
-      background: bg1
+      font-style: bold
 
     cxx:
       foreground: alt_blue
-      background: bg0
-      font-style: italic
+      font-style: bold
 
     ruby:
       foreground: red
