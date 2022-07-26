@@ -5,7 +5,7 @@ vim.cmd[[
   hi NeoTreeGitAdded      guibg=NONE guifg=#83a598
   hi NeoTreeExpander      guibg=NONE guifg=#83a598
   hi NeoTreeDirectoryIcon guibg=NONE guifg=#83a598
-  hi NeoTreeDirectoryName guibg=NONE guifg=#83a598
+  hi NeoTreeDirectoryName guibg=NONE guifg=#83a598 gui=bold
   hi NeoTreeDimText       guibg=NONE guifg=#7c6f64
   hi NeoTreeFileName      guibg=NONE guifg=#ebdbb2
 ]]
