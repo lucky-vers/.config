@@ -160,7 +160,7 @@ programming:
       font-style: italic
 
     lua:
-      foreground: blue
+      foreground: alt_blue
       font-style: italic
 
     diff:
