@@ -162,7 +162,6 @@ programming:
     lua:
       foreground: blue
       font-style: italic
-      background: bg1
 
     diff:
       foreground: yellow
