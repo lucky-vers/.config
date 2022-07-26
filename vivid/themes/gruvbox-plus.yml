@@ -1,0 +1,249 @@
+colors:
+  bg:         "32302f"
+  bg0:        "32302f"
+  bg1:        "3c3836"
+  bg2:        "504945"
+  bg3:        "665c54"
+  bg4:        "7c6f64"
+
+  fg:         "ebdbb2"
+  fg0:        "fbf1c7"
+  fg1:        "ebdbb2"
+  fg2:        "d5c4a1"
+  fg3:        "bdae93"
+  fg4:        "a89984"
+
+  red:        "cc241d"
+  green:      "98971a"
+  yellow:     "d79921"
+  blue:       "458588"
+  purple:     "b16286"
+  aqua:       "689d6a"
+  orange:     "d65d0e"
+  gray:       "a89984"
+
+  alt_red:    "fb4934"
+  alt_green:  "b8bb26"
+  alt_yellow: "fabd2f"
+  alt_blue:   "83a598"
+  alt_purple: "d3869b"
+  alt_aqua:   "8ec07c"
+  alt_orange: "fe8019"
+  alt_gray:   "928374"
+
+core:
+  normal_text:
+    foreground: fg
+    background: bg
+
+  regular_file:
+    foreground: fg
+    background: bg
+
+  reset_to_normal: {}
+
+  directory:
+    foreground: blue
+
+  symlink:
+    foreground: alt_blue
+    font-style: italic
+
+  multi_hard_link:
+    font-style: bold
+
+  fifo:
+    foreground: purple
+
+  socket:
+    foreground: purple
+    font-style: bold
+
+  door:
+    foreground: alt_purple
+    font-style: bold
+
+  block_device:
+    foreground: yellow
+    font-style: bold
+
+  character_device:
+    foreground: alt_yellow
+    font-style: italic
+
+  broken_symlink:
+    foreground: alt_red
+    font-style: italic
+
+  missing_symlink_target:
+    foreground: fg
+    background: alt_red
+
+  setuid:
+    foreground: fg
+    background: red
+
+  setgid:
+    foreground: bg
+    background: orange
+
+  file_with_capability:
+    foreground: bg
+    background: red
+
+  sticky_other_writable:
+    foreground: fg
+    background: blue
+    font-style: italic
+
+  other_writable:
+    foreground: alt_green
+    font-style: bold
+
+  sticky:
+    foreground: fg
+    background: blue
+
+  executable_file:
+    foreground: alt_green
+    font-style: bold
+
+text:
+  special:
+    foreground: alt_yellow
+    font-style: bold
+
+  todo:
+    foreground: alt_green
+
+  licenses:
+    foreground: fg1
+    font-style: italic
+
+  configuration:
+    foreground: alt_yellow
+
+  other:
+    foreground: fg
+
+markup:
+  foreground: yellow
+
+crypto:
+  foreground: alt_green
+  background: bg1
+  font-style: bold
+
+programming:
+  source:
+    foreground: green
+    font-style: italic
+
+    python:
+      foreground: alt_blue
+      font-style: italic
+
+    java:
+      foreground: orange
+      font-style: italic
+
+    javascript:
+      foreground: alt_yellow
+      font-style: italic
+
+    typescript:
+      foreground: blue
+      font-style: italic
+
+    rust:
+      foreground: alt_orange
+      font-style: italic
+
+    lua:
+      foreground: blue
+      font-style: italic
+      background: bg1
+
+    diff:
+      foreground: yellow
+      font-style: bold
+
+    php:
+      foreground: purple
+      font-style: italic
+      background: bg1
+
+    cxx:
+      foreground: alt_blue
+      background: bg0
+      font-style: italic
+
+    ruby:
+      foreground: red
+      font-style: italic
+
+    haskell:
+      foreground: purple
+      font-style: italic
+
+    shell:
+      foreground: green
+      font-style: italic
+
+  tooling:
+    foreground: alt_green
+    font-style: italic
+
+    continuous-integration:
+      foreground: alt_blue
+
+media:
+
+  image:
+    foreground: alt_blue
+    font-style: italic
+
+  video:
+    foreground: alt_aqua
+    font-style: bold
+
+  fonts:
+    foreground: gray
+    font-style: italic
+
+  foreground: aqua
+
+office:
+  foreground: fg2
+  font-style: bold
+
+  document:
+    foreground: blue
+    font-style: bold
+
+  spreadsheet:
+    foreground: green
+    font-style: bold
+
+  presentation:
+    foreground: orange
+    font-style: bold
+
+archives:
+  foreground: orange
+
+  other:
+    foreground: alt_red
+    font-style: bold
+
+  images:
+    foreground: alt_orange
+    font-style: bold
+
+executable:
+  foreground: alt_green
+  font-style: bold
+
+unimportant:
+  foreground: bg3
+  font-style: italic
