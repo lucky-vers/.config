@@ -23,10 +23,9 @@ function man() {
 
 ## HISTORY ##
 
-HISTSIZE=10000000
-SAVEHIST=10000000
-
 export HISTFILE="$HOME/.local/state/zsh/history"
+export HISTSIZE=
+export SAVEHIST=
 
 ## ZCOMPDUMP ##
 
