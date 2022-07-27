@@ -8,8 +8,9 @@ $character\
 add_newline       = false
 
 [character]
-success_symbol    = "[](fg:#b8bb26)"
+success_symbol    = "[](fg:#8ec07c)"
 error_symbol      = "[](fg:#fb4934)"
+vimcmd_symbol     = "[](fg:#b8bb26)"
 
 [directory]
 format            = "[$path]($style)[$read_only]($read_only_style)"

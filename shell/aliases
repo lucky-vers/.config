@@ -1,0 +1,38 @@
+## VERBOSITY AND SETTINGS THAT YOU'RE ALWAYS GOING TO WANT ##
+alias \
+  cp="cp -iv" \
+  mv="mv -iv" \
+  rm="rm -vI" \
+  bc="bc -ql" \
+  mkd="mkdir -pv" \
+  yt="yt-dlp --embed-metadata -i" \
+  yta="yt -x -f bestaudio/best" \
+  ffmpeg="ffmpeg -hide_banner"
+
+## COLORIZE COMMANDS WHEN POSSIBLE ##
+alias \
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  ccat="highlight --out-format=ansi" \
+  ip="ip -color=auto"
+
+alias \
+  ll="ls -halF" \
+  la="ls -A" \
+  l="ls -CF" \
+  ls="exa -la" \
+  v="nvim" \
+  nv="nvim" \
+  bs="nvim ~/.bashrc && source ~/.bashrc" \
+  zs="nvim ~/.config/zsh/.zshrc && source ~/.config/zsh/.zshrc" \
+  gl="git log" \
+  gp="git push" \
+  gd="git diff" \
+  ga="git add" \
+  gc="git commit -m" \
+  vc="cd ~/.config/nvim/lua/user" \
+  ..="cd .." \
+  c="cd ~/.config" \
+  x="cd /" \
+  h="cd ~" \
+  gaa="git add ."
