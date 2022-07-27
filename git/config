@@ -1,3 +1,9 @@
 [user]
 	email = vermalucky2004@gmail.com
 	name = lucky-vers
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
