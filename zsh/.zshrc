@@ -15,6 +15,10 @@ function man() {
     man "$@"
 }
 
+## EXPORT EDITOR ##
+
+export EDITOR="nvim"
+
 ## HISTORY ##
 
 export HISTFILE="$HOME/.local/state/zsh/.zsh_history"
