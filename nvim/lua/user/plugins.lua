@@ -88,8 +88,8 @@ return packer.startup(function(use)
     use "saadparwaiz1/cmp_luasnip"         -- Snippet Completions
 
  -- Snippets
-   use "L3MON4D3/LuaSnip"                 -- Snippet Engine
-   use "rafamadriz/friendly-snippets"     -- A Bunch of Snippets to use
+    use "L3MON4D3/LuaSnip"                 -- Snippet Engine
+    use "rafamadriz/friendly-snippets"     -- A Bunch of Snippets to use
 
   -- LSP
     use "neovim/nvim-lspconfig"            -- LSP Enabler
