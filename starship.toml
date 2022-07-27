@@ -13,9 +13,9 @@ error_symbol      = "[](fg:#fb4934)"
 
 [directory]
 format            = "[$path]($style)[$read_only]($read_only_style)"
-style             = "fg:#d3869b"
+style             = "bold fg:#d3869b"
+read_only_style   = "bold fg:#d3869b"
 read_only         = " "
-read_only_style   = "fg:#d3869b"
 truncation_symbol = "…/"
 
 [git_branch]
