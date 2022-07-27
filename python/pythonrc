@@ -2,11 +2,12 @@ import atexit
 import os
 import readline
 
-histfile = os.path.join(os.path.expanduser("~/.cache/python/"), ".python_history")
+histfile = os.path.join(os.path.expanduser("~/.local/state/python/"), ".python_history")
+
 try:
     readline.read_history_file(histfile)
-    # default history len is -1 (infinite), which may grow unruly
-    readline.set_history_length(1000)
+    readline.set_history_length(-1)
+
 except FileNotFoundError:
     pass
 
