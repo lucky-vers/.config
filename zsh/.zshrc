@@ -26,6 +26,10 @@ function man() {
 HISTSIZE=10000000
 SAVEHIST=10000000
 
+## PYTHON ##
+
+export PYTHONSTARTUP="$HOME/.config/python/pythonrc"
+
 ## LOAD ALIASES ##
 
 source $HOME/.config/shell/aliases
