@@ -25,7 +25,7 @@ style             = "bold fg:#8ec07c"
 format            = " on [$symbol $branch]($style)"
 
 [git_status]
-style             = "italic bold fg:#8ec07c"
+style             = "bold fg:#8ec07c"
 format            = "[$all_status$ahead_behind]($style)"
 conflicted        = " ?"
 untracked         = " ~"
