@@ -1,10 +1,4 @@
-# bindkey -M menuselect 'h' vi-backward-char
-# bindkey -M menuselect 'k' vi-up-line-or-history
-# bindkey -M menuselect 'l' vi-forward-char
-# bindkey -M menuselect 'j' vi-down-line-or-history
-# bindkey -v '^?' backward-delete-char
-
-autoload -U colors && colors	# Load colors
+autoload -U colors && colors  # LOAD COLORS
 
 ## COLORIZE MAN PAGES ##
 
@@ -23,9 +17,11 @@ function man() {
 
 ## HISTORY ##
 
-export HISTFILE="$HOME/.local/state/zsh/history"
-export HISTSIZE=
-export SAVEHIST=
+export HISTFILE="$HOME/.local/state/zsh/.zsh_history"
+export HISTSIZE=1000000000
+export SAVEHIST=1000000000
+
+setopt INC_APPEND_HISTORY
 
 ## ZCOMPDUMP ##
 
