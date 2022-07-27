@@ -26,16 +26,14 @@ function man() {
 HISTSIZE=10000000
 SAVEHIST=10000000
 
-HISTFILE="$HOME/.cache/zsh/history"
-
 ## LOAD ALIASES ##
 
 source $HOME/.config/shell/aliases
 
 ## PLUGINS ##
 
-source $HOME/.config/zsh/plugins/cd-ls/cd-ls.zsh
-source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.config/zsh/plugins/cd-ls/cd-ls.zsh 2>/dev/null
+source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 ## ENABLE VI MODE ##
 
@@ -52,12 +50,12 @@ function zle-keymap-select () {
 }
 zle -N zle-keymap-select
 zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    zle -K viins # INITIATE `VI INSERT` AS KEYMAP (CAN BE REMOVED IF `BINDKEY -V` HAS BEEN SET ELSEWHERE)
     echo -ne "\e[5 q"
 }
 zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+echo -ne '\e[5 q' # USE BEAM SHAPE CURSOR ON STARTUP
+preexec() { echo -ne '\e[5 q' ;} # USE BEAM SHAPE CURSOR FOR EACH NEW PROMPT
 
 ## BASIC AUTOCOMPLETE ##
 
@@ -76,4 +74,4 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 eval "$(starship init zsh)"
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
