@@ -44,7 +44,7 @@ require("neo-tree").setup({
       folder_closed = "",
       folder_open   = "",
       folder_empty  = "",
-      default       = "",
+      default       = "",
       highlight     = "NeoTreeFileIcon"
     },
     modified = {
@@ -107,7 +107,7 @@ require("neo-tree").setup({
       visible              = false,          -- when true, they will just be displayed differently than normal items
       hide_dotfiles        = false,
       hide_gitignored      = false,
-      hide_hidden          = true,           -- only works on Windows for hidden files/directories
+      hide_hidden          = false,          -- only works on Windows for hidden files/directories
       hide_by_name         = {},
       hide_by_pattern      = {},             -- uses glob style patterns
       never_show           = {},             -- remains hidden even if visible is toggled to true
