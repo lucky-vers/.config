@@ -25,6 +25,7 @@ alias \
   ls="exa -la" \
   v="nvim" \
   nv="nvim" \
+  vim="nvim" \
   bs="nvim ~/.bashrc && source ~/.bashrc" \
   zs="nvim ~/.config/zsh/.zshrc && source ~/.config/zsh/.zshrc" \
   gl="git log" \

@@ -66,7 +66,7 @@ vim.g.maplocalleader = " "
 
   -- Go to line extremes
     map("n", "<A-i>", "0", opts) -- Go to begining
-    map("n", "<A-a>", "$", opts) -- Go to end
+    map("n", "<A-o>", "$", opts) -- Go to end
 
   -- Select all text
     map("n", "<C-a>", "gg0vG$", opts)
