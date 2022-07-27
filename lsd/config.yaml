@@ -1,6 +1,0 @@
-color:
-  theme: gruvbox
-
-symlink-arrow: ->
-hyperlink:     never
-date:          '+%d %b %y %X'
