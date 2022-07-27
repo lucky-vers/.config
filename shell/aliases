@@ -4,7 +4,7 @@ alias \
   mv="mv -iv" \
   rm="rm -vI" \
   bc="bc -ql" \
-  mkd="mkdir -pv" \
+  mkdir="mkdir -pv" \
   yt="yt-dlp --embed-metadata -i" \
   yta="yt -x -f bestaudio/best" \
   ffmpeg="ffmpeg -hide_banner"
