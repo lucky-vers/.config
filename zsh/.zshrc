@@ -26,6 +26,12 @@ function man() {
 HISTSIZE=10000000
 SAVEHIST=10000000
 
+export HISTFILE="$HOME/.local/state/zsh/history"
+
+## ZCOMPDUMP ##
+
+compinit -d ~/.cache/zsh/zcompdump
+
 ## VIVID ##
 
 export LS_COLORS="$(vivid generate gruvbox-plus)"

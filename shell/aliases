@@ -16,6 +16,8 @@ alias \
   ccat="highlight --out-format=ansi" \
   ip="ip -color=auto"
 
+## OTHER ##
+
 alias \
   ll="ls -halF" \
   la="ls -A" \
@@ -35,4 +37,5 @@ alias \
   c="cd ~/.config" \
   x="cd /" \
   h="cd ~" \
-  gaa="git add ."
+  gaa="git add ." \
+  wget="wget --hsts-file='~/.cache/wget-hsts'"
